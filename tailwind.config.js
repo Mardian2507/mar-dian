@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bg1: "url('/assets/bg1.jpg')",
-        bg2: "url('/assets/bg2.jpg')",
+        bg1: "url('/assets/bg1.webp')",
+        bg2: "url('/assets/bg2.webp')",
       },
     },
   },

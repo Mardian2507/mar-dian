@@ -5,10 +5,10 @@ export default function Document() {
     <Html>
       <Head>
         <meta charset="utf-8" />
-        <meta content="#112749" name="theme-color" />
-        <meta content="#112749" name="msapplication-navbutton-color" />
+        <meta content="#5651e5" name="theme-color" />
+        <meta content="#5651e5" name="msapplication-navbutton-color" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
-        <meta content="#112749" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="#5651e5" name="apple-mobile-web-app-status-bar-style" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link

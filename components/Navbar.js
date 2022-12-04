@@ -73,7 +73,7 @@ export default function Navbar() {
     <nav
       className={
         shadow
-          ? "w-full fixed z-10 shadow-xl py-3 px-4 bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-4 lg:max-w-7xl ease-in-out duration-300"
+          ? "w-full fixed z-10 shadow-xl py-3 px-4 bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-4 lg:max-w-7xl ease-in-out duration-100"
           : "w-full fixed z-10 py-3 px-4 md:py-4 lg:max-w-7xl"
       }
     >
@@ -81,12 +81,12 @@ export default function Navbar() {
         <div>
           <Link href="/">
             <Image
-              src="/assets/Me.jpg"
+              src="/assets/logoMe.webp"
               alt="Mardian Suherman Icon"
-              width="30"
+              width="100"
               height="30"
               priority
-              className="rounded-full bg-cover"
+              className=" bg-cover"
             />
           </Link>
         </div>
@@ -99,11 +99,11 @@ export default function Navbar() {
           <div className=" w-3/4 h-full md:w-full md:flex-row-reverse bg-amber-300 md:bg-transparent">
             <div className="flex flex-row p-5 justify-between md:hidden">
               <Image
-                src="/assets/Me2.png"
+                src="/assets/logoMe.webp"
                 alt="Mardian Suherman Logo"
-                width="40"
-                height="40"
-                className="rounded-full bg-cover"
+                width="180"
+                height="180"
+                className="bg-cover"
                 priority
               />
 
@@ -134,7 +134,7 @@ export default function Navbar() {
                           : "text-black dark:text-slate-50 hover:border-b-4 transition-all"
                       }`}
                     >
-                      <h3>{menu.text}</h3>{" "}
+                      <h3 className="pt-2">{menu.text}</h3>{" "}
                     </div>
                   </Link>
                 </li>
@@ -157,7 +157,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="">
+        <div className="flex flex-auto">
           {currentTheme === "dark" ? (
             <button
               className="bg-black-700 text-white hover:bg-black rounded-md border-[#5651e5] border-2"
