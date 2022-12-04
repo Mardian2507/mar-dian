@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-export default function layout(props) {
+export default function Layout(props) {
   return (
     <>
       <Head>
@@ -14,9 +14,9 @@ export default function layout(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen flex flex-col md:max-w-3xl lg:max-w-7xl mx-auto">
+      <div className="flex flex-col lg:max-w-7xl mx-auto ">
         <Navbar />
-        <main className="flex-grow dark:bg-slate-800 dark:text-slate-50 bg-slate-100 px-4 pt-20">
+        <main className="flex-grow dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
           {props.children}
         </main>
         <Footer />
