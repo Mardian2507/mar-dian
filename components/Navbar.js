@@ -12,10 +12,6 @@ import Moon from "./svgs/moon";
 import Resume from "./svgs/resume";
 import Sun from "./svgs/sun";
 import Whatsapp from "./svgs/whatsapp";
-import HomeIcon from "./svgs/homeIcon";
-import SkillsIcon from "./svgs/skillsIcon";
-import ProjectsIcon from "./svgs/projectsIcon";
-import ContactIcon from "./svgs/contactIcon";
 
 const menus = [
   { href: "/", text: "home" },
@@ -85,7 +81,7 @@ export default function Navbar() {
           <Link href="/">
             <Image
               src="/assets/logoMe.webp"
-              alt="Mardian Suherman Icon"
+              alt="MAR-DIAN logo"
               width="100"
               height="30"
               priority
@@ -95,7 +91,7 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`fixed w-full h-screen md:h-full bg-slate-900/90 top-0 transition-all md:static md:bg-transparent ${
+          className={`fixed z-20 w-full h-screen md:h-full bg-slate-900/90 top-0 transition-all md:static md:bg-transparent ${
             nav ? "left-0" : "-left-full"
           }`}
         >

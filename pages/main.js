@@ -116,10 +116,6 @@ export default function Main() {
           </div>
         </div>
       </div>
-
-      <div id="" className="pt-40 pb-40 flex justify-center items-center ">
-        <h2>On Progres...</h2>
-      </div>
     </>
   );
 }

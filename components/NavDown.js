@@ -26,7 +26,7 @@ const icons = [
 export default function NavDown() {
   return (
     <>
-      <div className="fixed z-10 bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
+      <div className="fixed z-[5] bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
         <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-100">
           {icons.map((icon, index) => (
             <li
