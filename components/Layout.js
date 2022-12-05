@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import NavDown from "./NavDown";
 
 export default function Layout(props) {
   return (
@@ -19,6 +20,7 @@ export default function Layout(props) {
         <main className="flex-grow dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
           {props.children}
         </main>
+        <NavDown />
         <Footer />
       </div>
     </>

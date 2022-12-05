@@ -12,6 +12,10 @@ import Moon from "./svgs/moon";
 import Resume from "./svgs/resume";
 import Sun from "./svgs/sun";
 import Whatsapp from "./svgs/whatsapp";
+import HomeIcon from "./svgs/homeIcon";
+import SkillsIcon from "./svgs/skillsIcon";
+import ProjectsIcon from "./svgs/projectsIcon";
+import ContactIcon from "./svgs/contactIcon";
 
 const menus = [
   { href: "/", text: "home" },
