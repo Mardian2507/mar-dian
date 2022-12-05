@@ -72,8 +72,8 @@ export default function Navbar() {
     <nav
       className={
         shadow
-          ? "w-full fixed z-10 shadow-xl py-3 px-4 bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-4 lg:max-w-7xl ease-in-out duration-100"
-          : "w-full fixed z-10 py-3 px-4 md:py-4 lg:max-w-7xl"
+          ? "w-full fixed z-10 shadow-xl py-1 px-4 bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 lg:max-w-7xl"
+          : "w-full fixed z-10 py-1 px-4 md:py-2 lg:max-w-7xl"
       }
     >
       <div className="flex flex-row justify-between items-center mx-auto">
@@ -95,7 +95,7 @@ export default function Navbar() {
             nav ? "left-0" : "-left-full"
           }`}
         >
-          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse backdrop-blur bg-amber-400/80 md:bg-transparent">
+          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse backdrop-blur bg-amber-400/80 md:bg-transparent md:backdrop-blur-none">
             <div className="flex flex-row p-5 justify-between md:hidden">
               <Image
                 src="/assets/logoMe.webp"
