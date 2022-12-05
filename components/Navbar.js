@@ -15,7 +15,6 @@ import Whatsapp from "./svgs/whatsapp";
 
 const menus = [
   { href: "/", text: "home" },
-  { href: "/about", text: "about" },
   { href: "/skills", text: "skills" },
   { href: "/projects", text: "projects" },
   { href: "/contact", text: "contact" },
@@ -96,7 +95,7 @@ export default function Navbar() {
             nav ? "left-0" : "-left-full"
           }`}
         >
-          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse bg-amber-300 md:bg-transparent">
+          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse bg-amber-400 md:bg-transparent">
             <div className="flex flex-row p-5 justify-between md:hidden">
               <Image
                 src="/assets/logoMe.webp"
@@ -118,7 +117,7 @@ export default function Navbar() {
             </div>
 
             <div className="pt-8 flex flex-row p-5 md:hidden">
-              <h3 className="text-center">
+              <h3 className="text-center border-l-2 border-r-2 px-1 border-[#5651e5]">
                 Let&#39;s build something together
               </h3>
             </div>
@@ -130,7 +129,7 @@ export default function Navbar() {
                     <div
                       className={`text-2xl md:text-sm cursor-pointer ${
                         router.asPath === menu.href
-                          ? "text-[#5651e5] border-b-4 border-[#5651e5]"
+                          ? "text-[#5651e5] border-b-4 border-[#5651e5] "
                           : "text-black dark:text-slate-50 hover:border-b-4 transition-all"
                       }`}
                     >
