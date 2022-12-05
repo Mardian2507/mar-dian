@@ -95,7 +95,7 @@ export default function Navbar() {
             nav ? "left-0" : "-left-full"
           }`}
         >
-          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse bg-amber-400 md:bg-transparent">
+          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse backdrop-blur bg-amber-400/80 md:bg-transparent">
             <div className="flex flex-row p-5 justify-between md:hidden">
               <Image
                 src="/assets/logoMe.webp"
