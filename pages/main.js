@@ -34,9 +34,9 @@ export default function Main() {
     <>
       <div
         id="hero"
-        className="relative flex justify-center items-center bg-bg1 bg-cover bg-no-repeat bg-center min-h-screen bg-fixed"
+        className="relative flex justify-center items-center bg-bg2 dark:bg-bg1 bg-cover bg-no-repeat bg-center min-h-screen bg-fixed"
       >
-        <div className="w-full absolute lg:max-w-7xl top-0 bottom-0 bg-white/60 dark:bg-black/60 " />
+        <div className="w-full absolute lg:max-w-7xl top-0 bottom-0 bg-white/80 dark:bg-black/60 " />
         <div className="pt-20 px-10 z-[2]">
           <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div>

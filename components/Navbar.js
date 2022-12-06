@@ -72,8 +72,8 @@ export default function Navbar() {
     <nav
       className={
         shadow
-          ? "w-full fixed z-10 shadow-xl py-1 px-4 bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 lg:max-w-7xl"
-          : "w-full fixed z-10 py-1 px-4 md:py-2 lg:max-w-7xl"
+          ? "w-full fixed z-10 shadow-xl py-1 px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 lg:max-w-7xl"
+          : "w-full fixed z-10 py-1 px-[11px] md:py-2 lg:max-w-7xl"
       }
     >
       <div className="flex flex-row justify-between items-center mx-auto">
