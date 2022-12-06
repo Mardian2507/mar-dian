@@ -17,7 +17,7 @@ export default function Layout(props) {
       </Head>
       <div className="flex flex-col lg:max-w-7xl mx-auto ">
         <Navbar />
-        <main className="flex-grow dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+        <main className="min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
           {props.children}
         </main>
         <NavDown />
