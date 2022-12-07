@@ -130,7 +130,7 @@ export default function Main() {
 
               <Link href="/projects">
                 <p
-                  className="py-2 pb-5 text-slate-900 dark:text-slate-300 underline cursor-pointer"
+                  className="py-2 pb-5 text-slate-900 dark:text-slate-300 underline cursor-pointer text-center md:text-start"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 >
