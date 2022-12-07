@@ -38,7 +38,7 @@ export default function Main() {
       >
         <div className="w-full absolute lg:max-w-7xl top-0 bottom-0 bg-white/80 dark:bg-black/60 " />
         <div className="px-5 z-[2] flex justify-center items-center">
-          <div className="w-full h-full ">
+          <div className="w-full h-full max-w-[1240px] m-auto">
             <div>
               <p
                 className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
@@ -93,7 +93,7 @@ export default function Main() {
 
       <div
         id="about"
-        className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-700 dark:text-slate-50 bg-slate-100 "
+        className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 "
       >
         <div className="pt-10 pb-20 px-5 md:px-24">
           <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
