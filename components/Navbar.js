@@ -24,22 +24,27 @@ const icons = [
   {
     href: "https://www.instagram.com/m_ardi_an/?hl=en",
     img: Instagram,
+    text: "Instagram",
   },
   {
     href: "https://www.linkedin.com/in/mardian-suherman-6a054a183/",
     img: Linkedin,
+    text: "Linkedin",
   },
   {
     href: "https://github.com/Mardian2507",
     img: Github,
+    text: "Github",
   },
   {
     href: "whatsapp://send?text=Assalamualaikum&phone=+6285659467422",
     img: Whatsapp,
+    text: "WhatsApp",
   },
   {
     href: "",
     img: Resume,
+    text: "Resume",
   },
 ];
 
@@ -52,7 +57,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 50) {
+      if (window.scrollY >= 60) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -91,11 +96,11 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`fixed z-20 w-full h-screen md:h-full bg-slate-900/90 top-0 transition-all md:static md:bg-transparent ${
+          className={`fixed z-20 w-full h-screen bg-slate-900/90 top-0 transition-all md:static md:h-full md:bg-transparent ${
             nav ? "left-0" : "-left-full"
           }`}
         >
-          <div className=" w-3/4 h-full md:w-full md:flex-row-reverse backdrop-blur bg-amber-400/80 md:bg-transparent md:backdrop-blur-none">
+          <div className=" w-3/4 h-screen backdrop-blur bg-amber-400/80  md:h-full md:w-full md:flex-row-reverse md:bg-transparent md:backdrop-blur-none">
             <div className="flex flex-row p-5 justify-between md:hidden">
               <Image
                 src="/assets/logoMe.webp"
@@ -141,14 +146,19 @@ export default function Navbar() {
             </ul>
 
             <div className="pt-12 px-5 md:hidden">
-              <span className="">Let&#39;s conect: </span>
+              <span>Let&#39;s conect: </span>
             </div>
 
-            <ul className="flex flex-row pt-2 px-5 justify-between md:hidden">
+            <ul className="container px-5 md:hidden flex justify-between">
               {icons.map((icon, index) => (
-                <li key={index}>
+                <li key={index} className="text-center">
                   <Link href={icon.href}>
-                    <icon.img />
+                    <div className="py-2">
+                      <icon.img />
+                    </div>
+                    <div className="text-xs m-auto dark:text-white/90">
+                      {icon.text}
+                    </div>
                   </Link>
                 </li>
               ))}

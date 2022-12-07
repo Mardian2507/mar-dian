@@ -37,8 +37,8 @@ export default function Main() {
         className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-600 dark:text-slate-50 bg-slate-100 "
       >
         {/* <div className="w-full absolute lg:max-w-7xl top-0 bottom-0 bg-white/80 dark:bg-black/60 " /> */}
-        <div className="px-5 z-[2] flex justify-center items-center">
-          <div className="w-full h-full max-w-[1240px] m-auto">
+        <div className="px-5 z-[2] flex justify-center items-center w-full">
+          <div className="m-auto">
             <div>
               <p
                 className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
