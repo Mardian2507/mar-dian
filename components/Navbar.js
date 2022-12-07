@@ -149,11 +149,11 @@ export default function Navbar() {
               <span>Let&#39;s conect: </span>
             </div>
 
-            <ul className="container px-5 md:hidden flex justify-between">
+            {/* <ul className="container px-5 md:hidden flex justify-between">
               {icons.map((icon, index) => (
                 <li key={index} className="text-center">
                   <Link href={icon.href}>
-                    <div className="py-2">
+                    <div className="py-2 px-4">
                       <icon.img />
                     </div>
                     <div className="text-xs m-auto dark:text-white/90">
@@ -162,7 +162,7 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
 
