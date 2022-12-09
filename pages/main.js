@@ -75,11 +75,11 @@ export default function Main() {
                 applications integrating back-end technologies.
               </p>
 
-              {/* <div className="flex justify-between max-w-xs md:max-w-full  mx-auto py-3">
+              <div className="flex justify-between max-w-xs md:max-w-full  mx-auto py-3">
                 <ul className="flex flex-row mx-auto">
                   {icons.map((icon, index) => (
                     <li
-                      className=" justify-between rounded-full shadow-lg shadow-gray-400 p-4 mx-1 md:p-6 md:mx-2 cursor-pointer hover:scale-110 ease-in duration-300"
+                      className=" justify-between rounded-full shadow-lg shadow-gray-400 p-4 mx-1 md:p-6 md:mx-2 cursor-pointer hover:scale-110 ease-in duration-300 group"
                       data-aos="zoom-in-up"
                       data-aos-duration="1000"
                       key={index}
@@ -89,11 +89,13 @@ export default function Main() {
                           <icon.img />
                         </div>
                       </Link>
-                      <div>{icon.text}</div>
+                      <div className="invisible group-hover:visible">
+                        {icon.text}
+                      </div>
                     </li>
                   ))}
                 </ul>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

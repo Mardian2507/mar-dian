@@ -1,17 +1,22 @@
 import Link from "next/link";
 import ContactIcon from "./svgs/contactIcon";
+import Gallery from "./svgs/gallery";
 import HomeIcon from "./svgs/homeIcon";
 import ProjectsIcon from "./svgs/projectsIcon";
 import SkillsIcon from "./svgs/skillsIcon";
 
 const icons = [
   {
-    href: "/",
-    img: HomeIcon,
+    href: "/gallery",
+    img: Gallery,
   },
   {
     href: "/skills",
     img: SkillsIcon,
+  },
+  {
+    href: "/",
+    img: HomeIcon,
   },
   {
     href: "/projects",
