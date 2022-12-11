@@ -84,37 +84,25 @@ export default function Navbar() {
       <div
         className={
           shadow
-            ? "w-full fixed z-10 shadow-xl py-1 px-[13px] md:px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-0 lg:max-w-7xl"
-            : "w-full fixed z-10 py-1 px-[13px] md:px-[11px] md:py-0 lg:max-w-7xl"
+            ? "w-full fixed z-10 shadow-xl py-1 px-[13px] md:px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-1 lg:max-w-7xl"
+            : "w-full fixed z-10 py-1 px-[13px] md:px-[11px] md:py-1 lg:max-w-7xl"
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
-          <div>
-            <Link href="/">
-              <Image
-                src="/assets/logoMe.webp"
-                alt="MAR-DIAN logo"
-                width="100"
-                height="30"
-                priority
-                className=" bg-cover "
-              />
-            </Link>
-          </div>
-
+          {/* Mobile Version */}
           <div
-            className={`fixed z-20 w-full h-full bg-slate-900/90 top-0 transition-all md:static md:bg-transparent ${
+            className={`fixed z-20 w-full min-h-screen bg-slate-900/90 top-0 transition-all md:hidden ${
               nav ? "left-0" : "-left-full"
             }`}
           >
-            <div className=" w-3/4 backdrop-blur bg-amber-400/80  h-full md:w-full md:flex-row-reverse md:bg-transparent md:backdrop-blur-none">
+            <div className=" w-3/4 backdrop-blur bg-amber-400/80 min-h-screen md:hidden">
               <div className="flex flex-row p-5 justify-between md:hidden">
                 <Image
                   src="/assets/logoMe.webp"
                   alt="Mardian Suherman Logo"
                   width="180"
                   height="180"
-                  className="bg-cover"
+                  className="bg-cover md:hidden"
                   priority
                 />
 
@@ -135,24 +123,22 @@ export default function Navbar() {
               </div>
 
               <div className="container">
-                <ul className="flex flex-col pt-8 space-y-2 px-5 md:pt-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-5 md:px-0">
+                <ul className="flex flex-col pt-8 space-y-2 px-5 md:hidden">
                   {menus.map((menu, index) => (
                     <li className="md:uppercase" key={index}>
                       <Link href={menu.href}>
                         <div
-                          className={`text-2xl md:text-sm cursor-pointer ${
+                          className={`text-2xl cursor-pointer ${
                             router.asPath === menu.href
                               ? "text-[#5651e5]  "
                               : "text-black dark:text-slate-50 "
                           }`}
                         >
-                          <div className="group md:text-center p-4 md:p-2 flex flex-row md:flex-col md:mb-[-23px]">
+                          <div className=" p-4 flex flex-row">
                             <p className="px-6 ">
                               <menu.icn />
                             </p>
-                            <p className="md:invisible group-hover:visible  group-hover:text-[#5651e5] dark:group-hover:text-slate-50 md:mt-2 md:bg-gradient-to-t from-slate-50 md:dark:bg-none backdrop-blur md:rounded-b-full md:text-xs">
-                              {menu.text}
-                            </p>
+                            <p className="">{menu.text}</p>
                           </div>
                         </div>
                       </Link>
@@ -183,8 +169,54 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+          {/* End Mobile Version */}
 
-          <div className="flex flex-auto">
+          {/* Logo */}
+          <div>
+            <Link href="/">
+              <Image
+                src="/assets/logoMe.webp"
+                alt="MAR-DIAN logo"
+                width="100"
+                height="30"
+                priority
+                className=" bg-cover "
+              />
+            </Link>
+          </div>
+          {/* End Logo */}
+
+          {/* Dekstop Version */}
+          <div className="container hidden md:block">
+            <ul className="flex md:pt-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-5 md:px-0">
+              {menus.map((menu, index) => (
+                <li className="md:uppercase" key={index}>
+                  <Link href={menu.href}>
+                    <div
+                      className={`text-2xl md:text-sm cursor-pointer ${
+                        router.asPath === menu.href
+                          ? "text-[#5651e5]  "
+                          : "text-black dark:text-slate-50 "
+                      }`}
+                    >
+                      <div className="md:relative group md:text-center p-4 md:p-2 flex flex-row md:flex-col">
+                        <p className="px-6 md:group-hover:invisible">
+                          <menu.icn />
+                        </p>
+                        <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-[#5651e5] dark:group-hover:text-slate-50">
+                          {menu.text}
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/*End Dekstop Version */}
+
+          {/* Togle DarkMode */}
+          <div className="flex flex-auto md:justify-end">
             {currentTheme === "dark" ? (
               <button
                 className="bg-black-700 text-white hover:bg-black rounded-md border-[#5651e5] border-2"
@@ -201,7 +233,9 @@ export default function Navbar() {
               </button>
             )}
           </div>
+          {/* End Togle DarkMode */}
 
+          {/* Humberger Menu */}
           <button
             className="md:hidden dark:text-slate-50"
             onClick={() => {
@@ -210,6 +244,7 @@ export default function Navbar() {
           >
             <Humberger />
           </button>
+          {/* End Humberger Menu */}
         </div>
       </div>
     </nav>

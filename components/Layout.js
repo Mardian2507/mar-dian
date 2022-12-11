@@ -15,9 +15,9 @@ export default function Layout(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container flex flex-col lg:max-w-7xl mx-auto ">
+      <div className="container flex flex-col lg:max-w-7xl">
         <Navbar />
-        <main className="min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+        <main className="min-h-screen px-10 dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
           {props.children}
         </main>
         <NavDown />

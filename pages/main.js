@@ -36,66 +36,60 @@ const icons = [
 
 export default function Main() {
   return (
-    <div className="container lg:max-w-7xl ">
-      <div
-        id="hero"
-        className="relative flex w-full lg:max-w-7xl justify-center items-center min-h-screen bg-bg1"
-      >
-        <div className="w-full absolute lg:max-w-7xl top-0 bottom-0 bg-white/80 dark:bg-black/60 " />
-        <div className="px-5 z-[2] flex justify-center items-center w-full">
-          <div className="m-auto">
-            <div>
-              <p
-                className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                LET&#39;S BUILD SOMETHING TOGETHER
-              </p>
-              <h1
-                className="py-4 text-gray-700 dark:text-slate-200"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                Hi, I&#39;m <span className="text-[#5651e5]"> Mardian</span>
-              </h1>
-              <h1
-                className="py-2 text-gray-700 dark:text-slate-200"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                A Front-End Web Developer
-              </h1>
-              <p
-                className="py-4 text-gray-600 dark:text-slate-200"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                I&#39;m focused on building responsive front-end web
-                applications integrating back-end technologies.
-              </p>
+    <div className="container w-full mx-auto ">
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+        <div className="">
+          <div className=" pt-14">
+            <p
+              className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              LET&#39;S BUILD SOMETHING TOGETHER
+            </p>
+            <h1
+              className="py-4 text-gray-700 dark:text-slate-200"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Hi, I&#39;m <span className="text-[#5651e5]"> Mardian</span>
+            </h1>
+            <h1
+              className="py-2 text-gray-700 dark:text-slate-200"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              A Front-End Web Developer
+            </h1>
+            <p
+              className="py-4 pb-10 text-gray-600 dark:text-slate-200"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              I&#39;m focused on building responsive front-end web applications
+              integrating back-end technologies.
+            </p>
 
-              <div className="flex justify-between max-w-xs md:max-w-full  mx-auto py-3">
-                <ul className="flex flex-row mx-auto">
-                  {icons.map((icon, index) => (
-                    <li
-                      className=" justify-between rounded-full shadow-lg shadow-gray-400 p-4 mx-1 md:p-6 md:mx-2 cursor-pointer hover:scale-110 ease-in duration-300 group"
-                      data-aos="zoom-in-up"
-                      data-aos-duration="1000"
-                      key={index}
-                    >
-                      <Link href={icon.href}>
-                        <div className="">
-                          <icon.img />
-                        </div>
-                      </Link>
-                      <div className="invisible group-hover:visible">
-                        {icon.text}
+            <div className="mx-auto max-w-[320px] md:max-w-full">
+              <ul className="flex justify-between">
+                {icons.map((icon, index) => (
+                  <li
+                    className="relative group"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    key={index}
+                  >
+                    <Link href={icon.href}>
+                      <div className="rounded-full shadow-lg shadow-gray-400 p-2 mx-1 md:p-6 md:mx-5 cursor-pointer md:group-hover:invisible">
+                        <icon.img />
                       </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                    </Link>
+                    <div className="absolute invisible p-2 inset-x-0 text-center rounded-full shadow-lg shadow-gray-400  md:-mt-14 cursor-pointer md:group-hover:visible">
+                      {icon.text}
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -105,7 +99,7 @@ export default function Main() {
         id="about"
         className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 "
       >
-        <div className="pt-10 pb-20 px-5 md:px-24">
+        <div className="pt-10 pb-20 md:px-24">
           <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
             <div className="col-span-2">
               <p
