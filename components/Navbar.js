@@ -54,6 +54,29 @@ const icons = [
   },
 ];
 
+const navDowns = [
+  {
+    href: "/gallery",
+    img: Gallery,
+  },
+  {
+    href: "/skills",
+    img: SkillsIcon,
+  },
+  {
+    href: "/",
+    img: HomeIcon,
+  },
+  {
+    href: "/projects",
+    img: ProjectsIcon,
+  },
+  {
+    href: "/contact",
+    img: ContactIcon,
+  },
+];
+
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -81,11 +104,12 @@ export default function Navbar() {
 
   return (
     <nav className="container">
+      {/* Navbar */}
       <div
         className={
           shadow
-            ? "w-full fixed z-10 shadow-xl py-1 px-[13px] md:px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-1 lg:max-w-7xl"
-            : "w-full fixed z-10 py-1 px-[13px] md:px-[11px] md:py-1 lg:max-w-7xl"
+            ? "w-full  lg:max-w-7xl fixed z-10 shadow-xl py-1 px-[13px] md:px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-1 "
+            : "w-full  lg:max-w-7xl fixed z-10 py-1 px-[13px] md:px-[11px] md:py-1 "
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
@@ -247,6 +271,24 @@ export default function Navbar() {
           {/* End Humberger Menu */}
         </div>
       </div>
+      {/* End Navbar */}
+
+      {/* NavDown */}
+      <div className="fixed z-[5] bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
+        <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-100">
+          {navDowns.map((navDown, index) => (
+            <li
+              className=" justify-between text-slate-900 dark:text-slate-50 mx-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+              key={index}
+            >
+              <Link href={navDown.href}>
+                <navDown.img />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* End NavDon */}
     </nav>
   );
 }

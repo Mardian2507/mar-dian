@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import NavDown from "./NavDown";
 
 export default function Layout(props) {
   return (
@@ -15,12 +14,13 @@ export default function Layout(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container flex flex-col lg:max-w-7xl">
+      <div className="container flex flex-col lg:max-w-7xl mx-auto">
         <Navbar />
-        <main className="min-h-screen px-10 dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+
+        <div className="px-1 md:p-10 flex-grow bg-slate-100 dark:bg-slate-800 dark:text-slate-50  ">
           {props.children}
-        </main>
-        <NavDown />
+        </div>
+
         <Footer />
       </div>
     </>
