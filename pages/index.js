@@ -4,7 +4,9 @@ import Main from "./main";
 export default function Home() {
   return (
     <Layout title="Mardian Suherman">
-      <Main />
+      <div>
+        <Main />
+      </div>
     </Layout>
   );
 }

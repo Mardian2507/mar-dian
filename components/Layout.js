@@ -14,10 +14,10 @@ export default function Layout(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container flex flex-col lg:max-w-7xl mx-auto">
+      <div className="flex flex-col lg:max-w-7xl mx-auto">
         <Navbar />
 
-        <div className="px-1 md:p-10 flex-grow bg-slate-100 dark:bg-slate-800 dark:text-slate-50  ">
+        <div className="px-4 md:p-10 flex-grow bg-slate-100 dark:bg-slate-800 dark:text-slate-50  ">
           {props.children}
         </div>
 

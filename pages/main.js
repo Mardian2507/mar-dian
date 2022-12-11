@@ -36,7 +36,7 @@ const icons = [
 
 export default function Main() {
   return (
-    <div className="container w-full mx-auto ">
+    <div className="w-full mx-auto ">
       <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
         <div className="">
           <div className=" pt-14">
@@ -95,10 +95,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div
-        id="about"
-        className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 "
-      >
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
         <div className="pt-10 pb-20 md:px-24">
           <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
             <div className="col-span-2">
