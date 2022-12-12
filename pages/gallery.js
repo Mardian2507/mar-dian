@@ -7,16 +7,16 @@ export default function Gallery() {
   return (
     <Layout title="Gallery Mardian">
       <div className="w-full  h-[1500px] justify-center items-center ">
-        <div className="overflow-hidden mb-6">
+        <div className="overflow-hidden mb-10">
           <ParallaxBanner
             layers={[
               {
                 speed: -100,
                 children: (
-                  <div className=" translate-y-[750px] w-full">
+                  <div className=" translate-y-[600px] md:translate-y-[650px] lg:translate-y-[720px] w-full">
                     <Image
                       alt="bg"
-                      src="/assets/img/bg.png"
+                      src="/assets/img/bgsea.png"
                       width="3000"
                       height="3000"
                       className="bg-cover "
@@ -29,7 +29,7 @@ export default function Gallery() {
               {
                 speed: -40,
                 children: (
-                  <div className=" translate-y-[350px] w-full">
+                  <div className=" translate-y-[320px] md:translate-y-[370px] lg:translate-y-[460px] w-full">
                     <Image
                       alt="bgstone"
                       src="/assets/img/bgstone.png"
@@ -45,7 +45,7 @@ export default function Gallery() {
                 speed: -50,
                 children: (
                   <div className="absolute inset-0 flex items-center justify-end">
-                    <h1 className="text-sm p-2  text-white translate-y-[-100px] font-thin">
+                    <h1 className="text-sm md:text-2xl lg:text-5xl p-2 md:p-10  text-white translate-y-[-150px] md:translate-y-[-70px] lg:translate-y-[140px] font-thin">
                       Mar-Dian
                     </h1>
                   </div>
@@ -86,7 +86,7 @@ export default function Gallery() {
               {
                 speed: -5,
                 children: (
-                  <div className="absolute  translate-y-[70px]">
+                  <div className="absolute  translate-y-[75px]">
                     <Image
                       alt="my"
                       src="/assets/img/my.png"
@@ -99,7 +99,7 @@ export default function Gallery() {
                 ),
               },
             ]}
-            className="aspect-[16/12] mt-20"
+            className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8] mt-16"
           />
         </div>
         <div className="container">
