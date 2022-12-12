@@ -17,6 +17,7 @@
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll-parallax": "^3.3.2",
     "sharp": "^0.31.2"
   },
   "devDependencies": {

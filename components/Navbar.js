@@ -86,7 +86,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 60) {
+      if (window.scrollY >= 50) {
         setShadow(true);
       } else {
         setShadow(false);

@@ -4,22 +4,20 @@ import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-      delay: 50,
-    });
+    AOS.init();
     AOS.refresh();
   }, []);
 
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <NextNProgress />
-      <Component {...pageProps} />
+      <ParallaxProvider>
+        <Component {...pageProps} />
+      </ParallaxProvider>
     </ThemeProvider>
   );
 }
