@@ -7,7 +7,7 @@ export default function Gallery() {
   return (
     <Layout title="Gallery Mardian">
       <div className="w-full  h-[1500px] justify-center items-center ">
-        <div className="overflow-hidden mb-10">
+        <div className="overflow-hidden mb-6">
           <ParallaxBanner
             layers={[
               {
