@@ -99,7 +99,7 @@ export default function Gallery() {
                 ),
               },
             ]}
-            className="aspect-[16/12] md:aspect-[16/10] mt-20"
+            className="aspect-[16/12] mt-20"
           />
         </div>
         <div className="container">
