@@ -7,7 +7,12 @@ import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      delay: 50,
+    });
     AOS.refresh();
   }, []);
 
