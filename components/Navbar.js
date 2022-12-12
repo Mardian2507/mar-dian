@@ -240,34 +240,36 @@ export default function Navbar() {
           {/*End Dekstop Version */}
 
           {/* Togle DarkMode */}
-          <div className="flex flex-auto md:justify-end">
+          <div id="modeGelap" className="flex flex-auto md:justify-end">
             {currentTheme === "dark" ? (
               <button
                 className="bg-black-700 text-white hover:bg-black rounded-md border-[#5651e5] border-2"
                 onClick={() => setTheme("light")}
               >
-                <Moon />
+                <Moon alt="Moon" />
               </button>
             ) : (
               <button
                 className="bg-gray-100 rounded-md border-[#5651e5] border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
-                <Sun />
+                <Sun alt="Sun" />
               </button>
             )}
           </div>
           {/* End Togle DarkMode */}
 
           {/* Humberger Menu */}
-          <button
-            className="md:hidden dark:text-slate-50"
-            onClick={() => {
-              setNav(!nav);
-            }}
-          >
-            <Humberger />
-          </button>
+          <div id="humbergerMenu">
+            <button
+              className="md:hidden dark:text-slate-50"
+              onClick={() => {
+                setNav(!nav);
+              }}
+            >
+              <Humberger alt="humbergerMenu" />
+            </button>
+          </div>
           {/* End Humberger Menu */}
         </div>
       </div>
