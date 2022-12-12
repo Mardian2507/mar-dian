@@ -240,27 +240,27 @@ export default function Navbar() {
           {/*End Dekstop Version */}
 
           {/* Togle DarkMode */}
-          <div id="modeGelap" className="flex flex-auto md:justify-end">
+          <div className="flex flex-auto md:justify-end">
             {currentTheme === "dark" ? (
               <button
                 className="bg-black-700 text-white hover:bg-black rounded-md border-[#5651e5] border-2"
                 onClick={() => setTheme("light")}
               >
-                <Moon alt="Moon" />
+                <Moon />
               </button>
             ) : (
               <button
                 className="bg-gray-100 rounded-md border-[#5651e5] border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
-                <Sun alt="Sun" />
+                <Sun />
               </button>
             )}
           </div>
           {/* End Togle DarkMode */}
 
           {/* Humberger Menu */}
-          <div id="humbergerMenu">
+          <div>
             <button
               className="md:hidden dark:text-slate-50"
               onClick={() => {
@@ -277,7 +277,7 @@ export default function Navbar() {
 
       {/* NavDown */}
       <div className="fixed z-[5] bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
-        <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-100">
+        <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
           {navDowns.map((navDown, index) => (
             <li
               className=" justify-between text-slate-900 dark:text-slate-50 mx-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
