@@ -115,7 +115,7 @@ export default function Navbar() {
         <div className="flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
-            className={`fixed z-20 w-full min-h-screen bg-slate-900/90 top-0 transition-all md:hidden ${
+            className={`fixed z-20 w-full min-h-screen bg-secondary/90 top-0 transition-all md:hidden ${
               nav ? "left-0" : "-left-full"
             }`}
           >
@@ -131,7 +131,7 @@ export default function Navbar() {
                 />
                 <div className="flex items-center">
                   <button
-                    className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-[#5651e5] border-2"
+                    className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-primary border-2"
                     onClick={() => {
                       setNav(false);
                     }}
@@ -142,7 +142,7 @@ export default function Navbar() {
               </div>
 
               <div className="pt-8 flex flex-row p-5 md:hidden">
-                <h3 className="text-center border-l-2 border-r-2 px-1 border-[#5651e5]">
+                <h3 className="text-center border-l-2 border-r-2 px-1 border-primary">
                   Let&#39;s build something together
                 </h3>
               </div>
@@ -155,8 +155,8 @@ export default function Navbar() {
                         <div
                           className={`text-2xl cursor-pointer ${
                             router.asPath === menu.href
-                              ? "text-[#5651e5] "
-                              : "text-slate-50 "
+                              ? "text-primary "
+                              : "text-light "
                           }`}
                         >
                           <div className=" p-4 flex flex-row">
@@ -188,9 +188,9 @@ export default function Navbar() {
                     <li key={index} className="text-center">
                       <Link href={icon.href}>
                         <div className="flex justify-center mb-2 ">
-                          <icon.img className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-[#5651e5] border-2" />
+                          <icon.img className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-primary border-2" />
                         </div>
-                        <div className="text-xs m-auto dark:text-white/90">
+                        <div className="text-xs m-auto dark:text-light">
                           {icon.text}
                         </div>
                       </Link>
@@ -226,15 +226,15 @@ export default function Navbar() {
                     <div
                       className={`text-2xl md:text-sm cursor-pointer ${
                         router.asPath === menu.href
-                          ? "text-[#5651e5]  "
-                          : "text-black dark:text-slate-50 "
+                          ? "text-primary  "
+                          : "text-secondary dark:text-light "
                       }`}
                     >
                       <div className="md:relative group md:text-center p-4 md:p-2 flex flex-row md:flex-col">
                         <p className="px-6 md:group-hover:invisible">
                           <menu.icn />
                         </p>
-                        <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-[#5651e5] dark:group-hover:text-slate-50">
+                        <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-primary dark:group-hover:text-light">
                           {menu.text}
                         </p>
                       </div>
@@ -250,14 +250,14 @@ export default function Navbar() {
           <div className="flex flex-auto md:justify-end">
             {currentTheme === "dark" ? (
               <button
-                className="bg-black-700 text-white hover:bg-black rounded-md border-[#5651e5] border-2"
+                className="text-white hover:bg-black rounded-md border-primary border-2"
                 onClick={() => setTheme("light")}
               >
                 <Moon />
               </button>
             ) : (
               <button
-                className="bg-gray-100 rounded-md border-[#5651e5] border-2 hover:bg-gray-300"
+                className="bg-gray-100 rounded-md border-primary border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
                 <Sun />
@@ -269,12 +269,12 @@ export default function Navbar() {
           {/* Humberger Menu */}
           <div>
             <button
-              className="md:hidden dark:text-slate-50"
+              className="md:hidden dark:text-light"
               onClick={() => {
                 setNav(!nav);
               }}
             >
-              <Humberger alt="humbergerMenu" />
+              <Humberger />
             </button>
           </div>
           {/* End Humberger Menu */}
@@ -287,15 +287,15 @@ export default function Navbar() {
         <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
           {navDowns.map((navDown, index) => (
             <li
-              className=" justify-between text-slate-900 dark:text-slate-50 mx-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+              className=" justify-between text-secondary dark:text-light mx-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
               key={index}
             >
               <Link href={navDown.href}>
                 <navDown.img
                   className={` ${
                     router.asPath === navDown.href
-                      ? "text-[#5651e5] "
-                      : "text-black dark:text-slate-50"
+                      ? "text-primary "
+                      : "text-secondary dark:text-light"
                   }`}
                 />
               </Link>

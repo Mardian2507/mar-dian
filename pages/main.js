@@ -37,10 +37,10 @@ const icons = [
 export default function Main() {
   return (
     <div className="w-full mx-auto ">
-      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen ">
         <div className="">
           <p
-            className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
+            className="uppercase text-sm tracking-widest text-gray-600 dark:text-light"
             // data-aos="fade-right"
             // data-aos-duration="1000"
           >
@@ -51,7 +51,7 @@ export default function Main() {
             // data-aos="fade-right"
             // data-aos-duration="1000"
           >
-            Hi, I&#39;m <span className="text-[#5651e5]"> Mardian</span>
+            Hi, I&#39;m <span className="text-primary"> Mardian</span>
           </h1>
           <h1
             className="py-2 text-gray-700 dark:text-slate-200"
@@ -93,25 +93,25 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen">
         <div className="m-auto md:grid md:px-20 grid-cols-3 gap-8">
           <div className="col-span-2">
             <p
-              className="uppercase text-xl tracking-widest text-[#5651e5]"
+              className="uppercase text-xl tracking-widest text-primary"
               // data-aos="fade-down-left"
               // data-aos-duration="1000"
             >
               About
             </p>
             <h2
-              className="py-4"
+              className="py-4 text-secondary dark:text-light"
               // data-aos="fade-down-left"
               // data-aos-duration="1000"
             >
               Who I Am
             </h2>
             <p
-              className="py-2 text-black dark:text-slate-50"
+              className="py-2 text-secondary dark:text-light"
               // data-aos="fade-up-right"
               // data-aos-duration="2000"
             >
@@ -128,7 +128,7 @@ export default function Main() {
 
             <Link href="/projects">
               <p
-                className="py-2 pb-5 text-slate-900 dark:text-slate-300 underline cursor-pointer text-center md:text-start"
+                className="py-2 pb-5 text-secondary dark:text-slate-300 underline cursor-pointer text-center md:text-start"
                 // data-aos="fade-left"
                 // data-aos-duration="1000"
               >

@@ -13,6 +13,12 @@ module.exports = {
         bg1: "url('/assets/bg1.webp')",
         bg2: "url('/assets/bg2.webp')",
       },
+      colors: {
+        primary: "#5651e5",
+        secondary: "#0f172a",
+        light: "#f8fafc",
+        danger: "#ef4444",
+      },
     },
   },
   plugins: [],

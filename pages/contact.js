@@ -40,7 +40,7 @@ export default function Contact() {
     <Layout title="Contact Mardian">
       <div id="contact" className="w-full h-full">
         <div className="lg:max-w-7xl m-auto px-2 py-16 w-full ">
-          <h2 className=" pt-2 text-center tracking-widest  text-[#5651e5] uppercase">
+          <h2 className=" pt-2 text-center tracking-widest  text-primary uppercase">
             Contact
           </h2>
           <h2 className="py-4">Get In Touch</h2>
@@ -75,7 +75,7 @@ export default function Contact() {
                           <li key={index} className="text-center">
                             <Link href={icon.href}>
                               <div className="flex justify-center mb-2 ">
-                                <icon.img className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-[#5651e5] border-2" />
+                                <icon.img className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-primary border-2" />
                               </div>
                               <div className="text-xs m-auto dark:text-white/90">
                                 {icon.text}
@@ -101,7 +101,7 @@ export default function Contact() {
                   <div className="grid md:grid-cols-2 gap-4 w-full py-1">
                     <div className="flex flex-col">
                       <label for="name">
-                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
                           Name
                         </span>
                         <input
@@ -110,16 +110,16 @@ export default function Contact() {
                           name="name"
                           minlength="2"
                           placeholder="input phone number"
-                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
                         />
-                        <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                        <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                           Name Invalid
                         </p>
                       </label>
                     </div>
                     <div className="flex flex-col">
                       <label for="phone">
-                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
                           Phone Number
                         </span>
                         <input
@@ -129,9 +129,9 @@ export default function Contact() {
                           minlength="8"
                           maxlength="14"
                           placeholder="input phone number"
-                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
                         />
-                        <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                        <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                           Phone Number Invalid
                         </p>
                       </label>
@@ -139,7 +139,7 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="email">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
                         Email
                       </span>
                       <input
@@ -147,16 +147,16 @@ export default function Contact() {
                         type="email"
                         name="email"
                         placeholder="input email"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
                       />
-                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                      <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Email Invalid
                       </p>
                     </label>
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="subject">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
                         Subject
                       </span>
                       <input
@@ -165,16 +165,16 @@ export default function Contact() {
                         name="subject"
                         minlength="2"
                         placeholder="input subject"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
                       />
-                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                      <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Subject Invalid
                       </p>
                     </label>
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="message">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
                         Message
                       </span>
                       <textarea
@@ -183,14 +183,14 @@ export default function Contact() {
                         name="massage"
                         minlength="2"
                         placeholder="input message"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
                       />
-                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                      <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Message Invalid
                       </p>
                     </label>
                   </div>
-                  <button className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-[#5651e5] border-2">
+                  <button className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-primary border-2">
                     Send Message
                   </button>
                 </form>

@@ -46,7 +46,7 @@ export default function Gallery() {
                 children: (
                   <div className="absolute inset-0 flex items-center justify-end">
                     <h1 className="text-sm md:text-2xl lg:text-5xl p-2 md:p-10  text-white translate-y-[-150px] md:translate-y-[-70px] lg:translate-y-[140px] font-thin">
-                      Mar-Dian
+                      20-10-20
                     </h1>
                   </div>
                 ),
@@ -103,7 +103,7 @@ export default function Gallery() {
           />
         </div>
         <div className="container">
-          <h2 className="sticky top-[53px] pt-2 text-center tracking-widest  text-[#5651e5] backdrop-blur rounded-lg uppercase">
+          <h2 className="sticky top-[53px] pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
             Gallery
           </h2>
           <p>
