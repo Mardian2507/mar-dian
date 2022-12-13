@@ -103,8 +103,8 @@ export default function Gallery() {
           />
         </div>
         <div className="container">
-          <h2 className="sticky top-12 pt-2 text-center backdrop-blur rounded-md">
-            MY GALLERY
+          <h2 className="sticky top-[53px] pt-2 text-center tracking-widest  text-[#5651e5] backdrop-blur rounded-lg uppercase">
+            Gallery
           </h2>
           <p>
             lorem200Lorem Ipsum is simply dummy text of the printing and
