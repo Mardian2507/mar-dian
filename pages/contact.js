@@ -94,53 +94,101 @@ export default function Contact() {
             <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
               <div className="p-4">
                 <form
-                  action="https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060"
                   method="POST"
+                  action="https://getform.io/f/4986e683-7d49-4f12-94e1-2e5cd581586c"
                   encType="multipart/form-data"
                 >
-                  <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="grid md:grid-cols-2 gap-4 w-full py-1">
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2">Name</label>
-                      <input
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                        type="text"
-                        name="name"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2">
-                        Phone Number
+                      <label for="name">
+                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                          Name
+                        </span>
+                        <input
+                          id="name"
+                          type="text"
+                          name="name"
+                          minlength="2"
+                          placeholder="input phone number"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        />
+                        <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                          Name Invalid
+                        </p>
                       </label>
-                      <input
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                        type="text"
-                        name="phone"
-                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <label for="phone">
+                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                          Phone Number
+                        </span>
+                        <input
+                          id="phone"
+                          type="tel"
+                          name="phone"
+                          minlength="8"
+                          maxlength="14"
+                          placeholder="input phone number"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                        />
+                        <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                          Phone Number Invalid
+                        </p>
+                      </label>
                     </div>
                   </div>
-                  <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Email</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="email"
-                      name="email"
-                    />
+                  <div className="flex flex-col py-1">
+                    <label for="email">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                        Email
+                      </span>
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="input email"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                      />
+                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                        Email Invalid
+                      </p>
+                    </label>
                   </div>
-                  <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Subject</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                      name="subject"
-                    />
+                  <div className="flex flex-col py-1">
+                    <label for="subject">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                        Subject
+                      </span>
+                      <input
+                        id="subject"
+                        type="text"
+                        name="subject"
+                        minlength="2"
+                        placeholder="input subject"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                      />
+                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                        Subject Invalid
+                      </p>
+                    </label>
                   </div>
-                  <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Message</label>
-                    <textarea
-                      className="border-2 rounded-lg p-3 border-gray-300"
-                      rows="10"
-                      name="message"
-                    ></textarea>
+                  <div className="flex flex-col py-1">
+                    <label for="message">
+                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-red-500 after:ml-2">
+                        Message
+                      </span>
+                      <textarea
+                        id="message"
+                        rows="10"
+                        name="massage"
+                        minlength="2"
+                        placeholder="input message"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#5651e5] focus:border-[#5651e5] invalid:text-red-500 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer"
+                      />
+                      <p className="mt-2 text-sm text-center text-red-500 invisible peer-invalid:visible">
+                        Message Invalid
+                      </p>
+                    </label>
                   </div>
                   <button className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-[#5651e5] border-2">
                     Send Message

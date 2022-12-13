@@ -39,120 +39,116 @@ export default function Main() {
     <div className="w-full mx-auto ">
       <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
         <div className="">
-          <div className=" pt-14">
-            <p
-              className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-            >
-              LET&#39;S BUILD SOMETHING TOGETHER
-            </p>
-            <h1
-              className="py-4 text-gray-700 dark:text-slate-200"
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-            >
-              Hi, I&#39;m <span className="text-[#5651e5]"> Mardian</span>
-            </h1>
-            <h1
-              className="py-2 text-gray-700 dark:text-slate-200"
-              // data-aos="fade-left"
-              // data-aos-duration="1000"
-            >
-              A Front-End Web Developer
-            </h1>
-            <p
-              className="py-4 pb-10 text-gray-600 dark:text-slate-200"
-              // data-aos="fade-left"
-              // data-aos-duration="1000"
-            >
-              I&#39;m focused on building responsive front-end web applications
-              integrating back-end technologies.
-            </p>
+          <p
+            className="uppercase text-sm tracking-widest text-gray-600 dark:text-slate-50"
+            // data-aos="fade-right"
+            // data-aos-duration="1000"
+          >
+            LET&#39;S BUILD SOMETHING TOGETHER
+          </p>
+          <h1
+            className="py-4 text-gray-700 dark:text-slate-200"
+            // data-aos="fade-right"
+            // data-aos-duration="1000"
+          >
+            Hi, I&#39;m <span className="text-[#5651e5]"> Mardian</span>
+          </h1>
+          <h1
+            className="py-2 text-gray-700 dark:text-slate-200"
+            // data-aos="fade-left"
+            // data-aos-duration="1000"
+          >
+            A Front-End Web Developer
+          </h1>
+          <p
+            className="py-4 pb-10 text-gray-600 dark:text-slate-200"
+            // data-aos="fade-left"
+            // data-aos-duration="1000"
+          >
+            I&#39;m focused on building responsive front-end web applications
+            integrating back-end technologies.
+          </p>
 
-            <div className="mx-auto max-w-[320px] md:max-w-full">
-              <ul className="flex justify-between">
-                {icons.map((icon, index) => (
-                  <li
-                    className="relative group"
-                    key={index}
-                    // data-aos="zoom-in-up"
-                    // data-aos-duration="1000"
-                  >
-                    <Link href={icon.href}>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-2 mx-1 md:p-6 md:mx-5 cursor-pointer md:group-hover:invisible">
-                        <icon.img />
-                      </div>
-                    </Link>
-                    <div className="absolute invisible p-2 inset-x-0 text-center rounded-full shadow-lg shadow-gray-400  md:-mt-14 cursor-pointer md:group-hover:visible">
-                      {icon.text}
+          <div className="mx-auto max-w-[320px] md:max-w-full">
+            <ul className="flex justify-between">
+              {icons.map((icon, index) => (
+                <li
+                  className="relative group"
+                  key={index}
+                  // data-aos="zoom-in-up"
+                  // data-aos-duration="1000"
+                >
+                  <Link href={icon.href}>
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-2 mx-1 md:p-6 md:mx-5 cursor-pointer md:group-hover:invisible">
+                      <icon.img />
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                  </Link>
+                  <div className="absolute invisible p-2 inset-x-0 text-center rounded-full shadow-lg shadow-gray-400  md:-mt-14 cursor-pointer md:group-hover:visible">
+                    {icon.text}
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
 
       <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen dark:bg-slate-800 dark:text-slate-50 bg-slate-100 ">
-        <div className="pt-10 pb-20 md:px-24">
-          <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-            <div className="col-span-2">
-              <p
-                className="uppercase text-xl tracking-widest text-[#5651e5]"
-                // data-aos="fade-down-left"
-                // data-aos-duration="1000"
-              >
-                About
-              </p>
-              <h2
-                className="py-4"
-                // data-aos="fade-down-left"
-                // data-aos-duration="1000"
-              >
-                Who I Am
-              </h2>
-              <p
-                className="py-2 text-black dark:text-slate-50"
-                // data-aos="fade-up-right"
-                // data-aos-duration="2000"
-              >
-                I specialize in building mobile responsive front-end UI
-                applications that connect with API&#39;s and other backend
-                technologies. I&#39;m passionate about learning new technologies
-                and understand there is more than one way to accomplish a task.
-                Though I am most proficient in building front-end applications
-                using HTML, CSS, Javascript, and React, I am a quick learner and
-                can pick up new tech stacks as needed. I believe that being a
-                great developer is not using one specific language, but choosing
-                the best tool for the job.
-              </p>
-
-              <Link href="/projects">
-                <p
-                  className="py-2 pb-5 text-slate-900 dark:text-slate-300 underline cursor-pointer text-center md:text-start"
-                  // data-aos="fade-left"
-                  // data-aos-duration="1000"
-                >
-                  Check out some of my latest projects.
-                </p>
-              </Link>
-            </div>
-
-            <div
-              className="w-fit h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4  hover:scale-105 ease-in duration-300"
-              // data-aos="zoom-in-down"
+        <div className="m-auto md:grid md:px-20 grid-cols-3 gap-8">
+          <div className="col-span-2">
+            <p
+              className="uppercase text-xl tracking-widest text-[#5651e5]"
+              // data-aos="fade-down-left"
+              // data-aos-duration="1000"
+            >
+              About
+            </p>
+            <h2
+              className="py-4"
+              // data-aos="fade-down-left"
+              // data-aos-duration="1000"
+            >
+              Who I Am
+            </h2>
+            <p
+              className="py-2 text-black dark:text-slate-50"
+              // data-aos="fade-up-right"
               // data-aos-duration="2000"
             >
-              <Image
-                src="/assets/mar-dian.webp"
-                width="200"
-                height="300"
-                className="rounded-xl"
-                alt="logo about"
-              />
-            </div>
+              I specialize in building mobile responsive front-end UI
+              applications that connect with API&#39;s and other backend
+              technologies. I&#39;m passionate about learning new technologies
+              and understand there is more than one way to accomplish a task.
+              Though I am most proficient in building front-end applications
+              using HTML, CSS, Javascript, and React, I am a quick learner and
+              can pick up new tech stacks as needed. I believe that being a
+              great developer is not using one specific language, but choosing
+              the best tool for the job.
+            </p>
+
+            <Link href="/projects">
+              <p
+                className="py-2 pb-5 text-slate-900 dark:text-slate-300 underline cursor-pointer text-center md:text-start"
+                // data-aos="fade-left"
+                // data-aos-duration="1000"
+              >
+                Check out some of my latest projects.
+              </p>
+            </Link>
+          </div>
+
+          <div
+            className="w-fit h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4  hover:scale-105 ease-in duration-300"
+            // data-aos="zoom-in-down"
+            // data-aos-duration="2000"
+          >
+            <Image
+              src="/assets/mar-dian.webp"
+              width="200"
+              height="300"
+              className="rounded-xl"
+              alt="logo about"
+            />
           </div>
         </div>
       </div>
