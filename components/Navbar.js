@@ -155,13 +155,19 @@ export default function Navbar() {
                         <div
                           className={`text-2xl cursor-pointer ${
                             router.asPath === menu.href
-                              ? "text-[#5651e5]  "
+                              ? "text-[#5651e5] "
                               : "text-slate-50 "
                           }`}
                         >
                           <div className=" p-4 flex flex-row">
                             <p className="px-6 ">
-                              <menu.icn />
+                              <menu.icn
+                                className={` ${
+                                  router.asPath === menu.href
+                                    ? "animate-ping "
+                                    : "animate-none "
+                                }`}
+                              />
                             </p>
                             <p className="">{menu.text}</p>
                           </div>
