@@ -164,7 +164,7 @@ export default function Navbar() {
                               <menu.icn
                                 className={` ${
                                   router.asPath === menu.href
-                                    ? "animate-ping "
+                                    ? "animate-pulse "
                                     : "animate-none "
                                 }`}
                               />
