@@ -295,7 +295,7 @@ export default function Navbar() {
                   className={` ${
                     router.asPath === navDown.href
                       ? "text-[#5651e5] "
-                      : "text-slate-50 "
+                      : "text-black dark:text-slate-50"
                   }`}
                 />
               </Link>
