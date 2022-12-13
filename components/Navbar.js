@@ -164,7 +164,7 @@ export default function Navbar() {
                               <menu.icn
                                 className={` ${
                                   router.asPath === menu.href
-                                    ? "animate-pulse "
+                                    ? "animate-ping "
                                     : "animate-none "
                                 }`}
                               />
@@ -291,7 +291,13 @@ export default function Navbar() {
               key={index}
             >
               <Link href={navDown.href}>
-                <navDown.img />
+                <navDown.img
+                  className={` ${
+                    router.asPath === navDown.href
+                      ? "text-[#5651e5] "
+                      : "text-slate-50 "
+                  }`}
+                />
               </Link>
             </li>
           ))}
