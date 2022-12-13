@@ -99,11 +99,13 @@ export default function Gallery() {
                 ),
               },
             ]}
-            className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8] mt-16"
+            className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8] mt-16 lg:mt-12"
           />
         </div>
         <div className="container">
-          <h2 className="text-center mb-3">MY GALLERY</h2>
+          <h2 className="sticky top-12 pt-2 text-center backdrop-blur rounded-md">
+            MY GALLERY
+          </h2>
           <p>
             lorem200Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industrys standard

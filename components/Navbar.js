@@ -129,15 +129,16 @@ export default function Navbar() {
                   className="bg-cover md:hidden"
                   priority
                 />
-
-                <button
-                  className="cursor-pointer"
-                  onClick={() => {
-                    setNav(false);
-                  }}
-                >
-                  <BtnClose />
-                </button>
+                <div className="flex items-center">
+                  <button
+                    className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-[#5651e5] border-2"
+                    onClick={() => {
+                      setNav(false);
+                    }}
+                  >
+                    <BtnClose />
+                  </button>
+                </div>
               </div>
 
               <div className="pt-8 flex flex-row p-5 md:hidden">
@@ -155,7 +156,7 @@ export default function Navbar() {
                           className={`text-2xl cursor-pointer ${
                             router.asPath === menu.href
                               ? "text-[#5651e5]  "
-                              : "text-black dark:text-slate-50 "
+                              : "text-slate-50 "
                           }`}
                         >
                           <div className=" p-4 flex flex-row">
@@ -171,7 +172,7 @@ export default function Navbar() {
                 </ul>
               </div>
 
-              <div className="pt-12 px-5 md:hidden">
+              <div className="pt-12 px-5 mb-4 md:hidden">
                 <span>Let&#39;s conect: </span>
               </div>
 
@@ -180,8 +181,8 @@ export default function Navbar() {
                   {icons.map((icon, index) => (
                     <li key={index} className="text-center">
                       <Link href={icon.href}>
-                        <div className="flex justify-center">
-                          <icon.img />
+                        <div className="flex justify-center mb-2 ">
+                          <icon.img className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-[#5651e5] border-2" />
                         </div>
                         <div className="text-xs m-auto dark:text-white/90">
                           {icon.text}
