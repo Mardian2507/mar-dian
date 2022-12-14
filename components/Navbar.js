@@ -108,8 +108,8 @@ export default function Navbar() {
       <div
         className={
           shadow
-            ? "w-full  lg:max-w-7xl fixed z-40 shadow-xl py-2 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 "
-            : "w-full  lg:max-w-7xl fixed z-40 py-2 px-[13px] md:px-[47px] md:py-2 "
+            ? "w-full lg:max-w-7xl fixed z-40 shadow-xl py-2 md:py-0 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur "
+            : "w-full lg:max-w-7xl fixed z-40 py-2 md:py-0 px-[13px] md:px-[47px]"
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
@@ -219,22 +219,22 @@ export default function Navbar() {
 
           {/* Dekstop Version */}
           <div className="container hidden md:block">
-            <ul className="flex md:pt-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-0 md:px-0">
+            <ul className="flex md:pt-0 md:px-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-0 ">
               {menus.map((menu, index) => (
                 <li className="md:uppercase" key={index}>
                   <Link href={menu.href}>
                     <div
-                      className={`text-2xl md:text-sm cursor-pointer ${
+                      className={`md:text-base font-bold cursor-pointer ${
                         router.asPath === menu.href
-                          ? "text-primary  "
+                          ? "text-primary"
                           : "text-secondary dark:text-light "
                       }`}
                     >
-                      <div className="md:relative group md:text-center flex flex-row ">
-                        <p className="px-6 md:group-hover:invisible">
+                      <div className="md:relative group md:text-center flex flex-row px-6">
+                        <p className="px-4 p-1 md:group-hover:invisible">
                           <menu.icn />
                         </p>
-                        <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-primary dark:group-hover:text-light">
+                        <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-secondary dark:group-hover:text-light">
                           {menu.text}
                         </p>
                       </div>
