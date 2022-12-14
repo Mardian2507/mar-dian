@@ -125,7 +125,7 @@ export default function Navbar() {
                   src="/assets/logoMe.webp"
                   alt="Mardian Suherman Logo"
                   width="180"
-                  height="180"
+                  height="69"
                   className="bg-cover md:hidden"
                   priority
                 />
@@ -209,7 +209,7 @@ export default function Navbar() {
                 src="/assets/logoMe.webp"
                 alt="MAR-DIAN logo"
                 width="100"
-                height="30"
+                height="39"
                 priority
                 className=" bg-cover "
               />
