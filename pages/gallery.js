@@ -14,7 +14,7 @@ export default function Gallery() {
               {
                 speed: -100,
                 children: (
-                  <div className=" translate-y-[600px] md:translate-y-[650px] lg:translate-y-[720px] w-full">
+                  <div className=" translate-y-[490px] md:translate-y-[500px] lg:translate-y-[630px] w-full">
                     <Image
                       alt="bg"
                       src="/assets/img/bgsea.png"
@@ -30,7 +30,7 @@ export default function Gallery() {
               {
                 speed: -40,
                 children: (
-                  <div className=" translate-y-[320px] md:translate-y-[370px] lg:translate-y-[460px] w-full">
+                  <div className=" translate-y-[280px] md:translate-y-[370px] lg:translate-y-[460px] w-full">
                     <Image
                       alt="bgstone"
                       src="/assets/img/bgstone.png"
@@ -46,7 +46,7 @@ export default function Gallery() {
                 speed: -50,
                 children: (
                   <div className="absolute inset-0 flex items-center justify-end">
-                    <h1 className="text-sm md:text-2xl lg:text-5xl p-2 md:p-10  text-white translate-y-[-150px] md:translate-y-[-70px] lg:translate-y-[140px] font-thin">
+                    <h1 className="text-sm md:text-2xl lg:text-5xl p-2 md:p-10  text-white translate-y-[-200px] md:translate-y-[-150px] lg:translate-y-[100px] font-thin">
                       20-10-20
                     </h1>
                   </div>
@@ -56,7 +56,7 @@ export default function Gallery() {
                 translateX: [100, 0],
                 speed: 20,
                 children: (
-                  <div className="absolute translate-x-[-90px] translate-y-[340px]">
+                  <div className="absolute translate-x-[-90px] translate-y-[340px] md:translate-y-[350px] md:translate-x-[-200px] lg:translate-x-[-500px] ">
                     <Image
                       alt="bird"
                       src="/assets/img/bird.png"
@@ -71,7 +71,7 @@ export default function Gallery() {
               {
                 speed: -20,
                 children: (
-                  <div className="absolute translate-y-[180px]">
+                  <div className="absolute translate-y-[155px] md:translate-y-[160px]">
                     <Image
                       alt="me"
                       src="/assets/img/me.png"
@@ -100,7 +100,7 @@ export default function Gallery() {
                 ),
               },
             ]}
-            className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8] mt-16 lg:mt-12"
+            className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8]"
           />
         </div>
         {/* End Hero Parallax */}
