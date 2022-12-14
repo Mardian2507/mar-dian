@@ -108,14 +108,14 @@ export default function Navbar() {
       <div
         className={
           shadow
-            ? "w-full  lg:max-w-7xl fixed z-10 shadow-xl py-2 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 "
-            : "w-full  lg:max-w-7xl fixed z-10 py-2 px-[13px] md:px-[47px] md:py-2 "
+            ? "w-full  lg:max-w-7xl fixed z-40 shadow-xl py-2 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 "
+            : "w-full  lg:max-w-7xl fixed z-40 py-2 px-[13px] md:px-[47px] md:py-2 "
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
-            className={`fixed z-20 w-full min-h-screen bg-secondary/90 top-0 transition-all md:hidden ${
+            className={`fixed z-50 w-full min-h-screen bg-secondary/90 top-0 transition-all md:hidden ${
               nav ? "left-0" : "-left-full"
             }`}
           >
@@ -259,19 +259,19 @@ export default function Navbar() {
                 <div className="md:group-hover:invisible">
                   <Moon />
                 </div>
-                <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
+                <span className="hidden md:block absolute inset-0 pt-[2px] text-base md:invisible md:group-hover:visible">
                   dark
                 </span>
               </button>
             ) : (
               <button
-                className="relative group px-2 bg-gray-100 rounded-md border-primary border-2 hover:bg-gray-300"
+                className="relative group px-2 rounded-md border-primary border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
                 <div className="md:group-hover:invisible">
                   <Sun />
                 </div>
-                <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
+                <span className="hidden md:block absolute inset-0 pt-[2px] text-base md:invisible md:group-hover:visible">
                   light
                 </span>
               </button>
@@ -296,7 +296,7 @@ export default function Navbar() {
       {/* End Navbar */}
 
       {/* NavDown */}
-      <div className="fixed z-[5] bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
+      <div className="fixed z-30 bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
         <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
           {navDowns.map((navDown, index) => (
             <li
