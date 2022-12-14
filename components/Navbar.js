@@ -219,7 +219,7 @@ export default function Navbar() {
 
           {/* Dekstop Version */}
           <div className="container hidden md:block">
-            <ul className="flex md:pt-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-5 md:px-0">
+            <ul className="flex md:pt-0 md:flex-row md:justify-end md:space-y-0 lg:space-x-0 md:px-0">
               {menus.map((menu, index) => (
                 <li className="md:uppercase" key={index}>
                   <Link href={menu.href}>
@@ -230,7 +230,7 @@ export default function Navbar() {
                           : "text-secondary dark:text-light "
                       }`}
                     >
-                      <div className="md:relative group md:text-center p-4 md:p-2 flex flex-row md:flex-col">
+                      <div className="md:relative group md:text-center flex flex-row ">
                         <p className="px-6 md:group-hover:invisible">
                           <menu.icn />
                         </p>
@@ -247,7 +247,10 @@ export default function Navbar() {
           {/*End Dekstop Version */}
 
           {/* Togle DarkMode */}
-          <div className="flex flex-auto md:justify-end">
+          <div className="flex flex-auto md:justify-end items-center ">
+            <span className="text-xs px-1 text-secondary dark:text-light">
+              Mode
+            </span>
             {currentTheme === "dark" ? (
               <button
                 className="text-white hover:bg-black rounded-md border-primary border-2"

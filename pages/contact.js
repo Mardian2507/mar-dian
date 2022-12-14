@@ -110,7 +110,7 @@ export default function Contact() {
                           name="name"
                           minlength="2"
                           placeholder="input phone number"
-                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-danger invalid:focus:border-danger peer"
                         />
                         <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                           Name Invalid
@@ -129,7 +129,7 @@ export default function Contact() {
                           minlength="8"
                           maxlength="14"
                           placeholder="input phone number"
-                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
+                          className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-danger invalid:focus:border-danger peer"
                         />
                         <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                           Phone Number Invalid
@@ -147,7 +147,7 @@ export default function Contact() {
                         type="email"
                         name="email"
                         placeholder="input email"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-danger invalid:focus:border-danger peer"
                       />
                       <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Email Invalid
@@ -165,7 +165,7 @@ export default function Contact() {
                         name="subject"
                         minlength="2"
                         placeholder="input subject"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-danger invalid:focus:border-danger peer"
                       />
                       <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Subject Invalid
@@ -183,7 +183,7 @@ export default function Contact() {
                         name="massage"
                         minlength="2"
                         placeholder="input message"
-                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-dangtext-danger invalid:focus:border-dangtext-danger peer"
+                        className="placeholder:text-slate-400 w-full border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary invalid:text-danger invalid:focus:ring-danger invalid:focus:border-danger peer"
                       />
                       <p className="mt-2 text-sm text-center text-danger invisible peer-invalid:visible">
                         Message Invalid
