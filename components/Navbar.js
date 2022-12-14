@@ -108,8 +108,8 @@ export default function Navbar() {
       <div
         className={
           shadow
-            ? "w-full  lg:max-w-7xl fixed z-10 shadow-xl py-1 px-[13px] md:px-[11px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-1 "
-            : "w-full  lg:max-w-7xl fixed z-10 py-1 px-[13px] md:px-[11px] md:py-1 "
+            ? "w-full  lg:max-w-7xl fixed z-10 shadow-xl py-2 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur md:py-2 "
+            : "w-full  lg:max-w-7xl fixed z-10 py-2 px-[13px] md:px-[47px] md:py-2 "
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
@@ -211,7 +211,7 @@ export default function Navbar() {
                 width="100"
                 height="39"
                 priority
-                className=" bg-cover "
+                className=" bg-cover ml-[-3px]"
               />
             </Link>
           </div>
@@ -253,17 +253,27 @@ export default function Navbar() {
             </span>
             {currentTheme === "dark" ? (
               <button
-                className="text-white hover:bg-black rounded-md border-primary border-2"
+                className="relative group px-2 text-white hover:bg-black rounded-md border-primary border-2"
                 onClick={() => setTheme("light")}
               >
-                <Moon />
+                <div className="visible group-hover:invisible">
+                  <Moon />
+                </div>
+                <span className="absolute inset-0 text-base invisible group-hover:visible">
+                  dark
+                </span>
               </button>
             ) : (
               <button
-                className="bg-gray-100 rounded-md border-primary border-2 hover:bg-gray-300"
+                className="relative group px-2 bg-gray-100 rounded-md border-primary border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
-                <Sun />
+                <div className="visible group-hover:invisible">
+                  <Sun />
+                </div>
+                <span className="absolute inset-0 text-base invisible group-hover:visible">
+                  light
+                </span>
               </button>
             )}
           </div>
