@@ -256,7 +256,7 @@ export default function Navbar() {
                 className="relative group px-2 text-white hover:bg-black rounded-md border-primary border-2"
                 onClick={() => setTheme("light")}
               >
-                <div className="visible group-hover:invisible">
+                <div className="md:group-hover:invisible">
                   <Moon />
                 </div>
                 <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
@@ -268,7 +268,7 @@ export default function Navbar() {
                 className="relative group px-2 bg-gray-100 rounded-md border-primary border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
-                <div className="visible group-hover:invisible">
+                <div className="md:group-hover:invisible">
                   <Sun />
                 </div>
                 <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
