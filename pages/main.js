@@ -36,10 +36,10 @@ const icons = [
 
 export default function Main() {
   return (
-    <div className="w-full mx-auto md:mt-[-48px] ">
-      <div className="relative flex w-full lg:max-w-7xl justify-center items-center min-h-screen ">
-        <div className="absolute z-0 bg-bg1 dark:bg-bg2 bg-fixed bg-center bg-cover bg-no-repeat left-[-48px] right-[-48px] top-0 bottom-0" />
-        <div className="absolute z-10 bg-gradient-to-t from-slate-100 dark:bg-gradient-to-t dark:from-slate-800 left-[-48px] right-[-48px] top-0 bottom-0" />
+    <div className="w-full h-full">
+      <div className="relative flex w-full lg:max-w-7xl justify-center items-center min-h-screen">
+        <div className="absolute z-0 bg-bg1 dark:bg-bg2 bg-fixed bg-center bg-cover bg-no-repeat left-0 right-0 top-0 bottom-0" />
+        <div className="absolute z-10 bg-gradient-to-t from-slate-100 dark:bg-gradient-to-t dark:from-slate-800 left-0 right-0 top-0 bottom-0" />
         <div className="px-5 z-20">
           <p
             className="uppercase text-sm tracking-widest text-gray-800 dark:text-light"
@@ -95,7 +95,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen">
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen px-5 md:px-14">
         <div className="m-auto md:grid md:px-20 grid-cols-3 gap-8">
           <div className="col-span-2">
             <p

@@ -7,6 +7,7 @@ export default function Gallery() {
   return (
     <Layout title="Gallery Mardian">
       <div className="w-full  h-[1500px] justify-center items-center ">
+        {/* Hero Parallax */}
         <div className="overflow-hidden mb-10">
           <ParallaxBanner
             layers={[
@@ -102,7 +103,9 @@ export default function Gallery() {
             className="aspect-[16/12] md:aspect-[16/11] lg:aspect-[16/8] mt-16 lg:mt-12"
           />
         </div>
-        <div className="container">
+        {/* End Hero Parallax */}
+
+        <div className="container px-2 md:px-5">
           <h2 className="sticky top-[53px] pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
             Gallery
           </h2>
