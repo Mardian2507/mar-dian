@@ -259,7 +259,7 @@ export default function Navbar() {
                 <div className="visible group-hover:invisible">
                   <Moon />
                 </div>
-                <span className="absolute inset-0 pt-[1px] text-base invisible md:group-hover:visible">
+                <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
                   dark
                 </span>
               </button>
@@ -271,7 +271,7 @@ export default function Navbar() {
                 <div className="visible group-hover:invisible">
                   <Sun />
                 </div>
-                <span className="absolute inset-0 pt-[1px] text-base invisible md:group-hover:visible">
+                <span className="hidden md:block absolute inset-0 pt-[1px] text-base md:invisible md:group-hover:visible">
                   light
                 </span>
               </button>
