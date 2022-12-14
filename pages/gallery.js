@@ -105,8 +105,8 @@ export default function Gallery() {
         </div>
         {/* End Hero Parallax */}
 
-        <div className="container px-2 md:px-5">
-          <h2 className="sticky top-[53px] pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
+        <div className="container px-5">
+          <h2 className="sticky top-[48px] md:top-[-20px] pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
             Gallery
           </h2>
           <p>
