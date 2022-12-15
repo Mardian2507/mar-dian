@@ -86,7 +86,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 50) {
+      if (window.scrollY >= 90) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -108,18 +108,22 @@ export default function Navbar() {
       <div
         className={
           shadow
-            ? "w-full lg:max-w-7xl fixed z-40 shadow-xl py-2 md:py-0 px-[13px] md:px-[47px] bg-white/70 dark:bg-slate-800/70 backdrop-blur "
-            : "w-full lg:max-w-7xl fixed z-40 py-2 md:py-0 px-[13px] md:px-[47px]"
+            ? "w-full lg:max-w-7xl sticky transition-all duration-500 z-40  py-2 md:py-1 px-[13px] md:px-[47px] "
+            : "w-full lg:max-w-7xl fixed transition-all duration-500 z-40 shadow-xl py-2 md:py-1 px-[13px] md:px-[47px]  backdrop-blur "
         }
       >
         <div className="flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
-            className={`fixed z-50 w-full min-h-screen bg-secondary/90 top-0 transition-all md:hidden ${
+            className={`fixed z-50 z w-full min-h-screen bg-secondary/90 top-0 transition-all duration-300 md:hidden ${
               nav ? "left-0" : "-left-full"
             }`}
           >
-            <div className=" w-3/4 backdrop-blur bg-amber-400/80 min-h-screen md:hidden">
+            <div
+              className={`fixed z-50 z w-3/4 min-h-screen backdrop-blur bg-amber-400/80 top-0 transition-all duration-700 md:hidden ${
+                nav ? "left-0" : "-left-full"
+              }`}
+            >
               <div className="flex flex-row p-5 justify-between md:hidden">
                 <Image
                   src="/assets/logoMe.webp"
@@ -140,13 +144,11 @@ export default function Navbar() {
                   </button>
                 </div>
               </div>
-
               <div className="pt-8 flex flex-row p-5 md:hidden">
                 <h3 className="text-center border-l-2 border-r-2 px-1 border-primary">
                   Let&#39;s build something together
                 </h3>
               </div>
-
               <div className="container">
                 <ul className="flex flex-col pt-8 space-y-2 px-5 md:hidden">
                   {menus.map((menu, index) => (
@@ -177,11 +179,9 @@ export default function Navbar() {
                   ))}
                 </ul>
               </div>
-
               <div className="pt-12 px-5 mb-4 md:hidden">
                 <span>Let&#39;s conect: </span>
               </div>
-
               <div className="container">
                 <ul className="px-5 md:hidden flex justify-between">
                   {icons.map((icon, index) => (

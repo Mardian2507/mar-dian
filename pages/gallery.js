@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function Gallery() {
@@ -106,7 +105,7 @@ export default function Gallery() {
         {/* End Hero Parallax */}
 
         <div className="container px-5">
-          <h2 className="sticky top-[48px] md:top-[-20px] pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
+          <h2 className="sticky top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
             Gallery
           </h2>
           <p>
