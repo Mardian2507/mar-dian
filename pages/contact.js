@@ -52,7 +52,7 @@ export default function Contact() {
             {/* left */}
             <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full ">
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                   <Image
                     src="/assets/mar-dian.webp"
                     width="200"
@@ -111,7 +111,7 @@ export default function Contact() {
                       <label for="name">
                         <span
                           className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
-                          data-aos="fade-left"
+                          data-aos="fade-down"
                           data-aos-duration="1000"
                         >
                           Name
@@ -133,7 +133,7 @@ export default function Contact() {
                       <label for="phone">
                         <span
                           className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
-                          data-aos="fade-left"
+                          data-aos="fade-down"
                           data-aos-duration="1000"
                         >
                           Phone Number
@@ -157,7 +157,7 @@ export default function Contact() {
                     <label for="email">
                       <span
                         className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
-                        data-aos="fade-left"
+                        data-aos="fade-down"
                         data-aos-duration="1000"
                       >
                         Email
@@ -178,7 +178,7 @@ export default function Contact() {
                     <label for="subject">
                       <span
                         className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
-                        data-aos="fade-left"
+                        data-aos="fade-down"
                         data-aos-duration="1000"
                       >
                         Subject
@@ -200,7 +200,7 @@ export default function Contact() {
                     <label for="message">
                       <span
                         className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
-                        data-aos="fade-left"
+                        data-aos="fade-down"
                         data-aos-duration="1000"
                       >
                         Message
