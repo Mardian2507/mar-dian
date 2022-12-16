@@ -19,11 +19,11 @@ import Gallery from "./svgs/gallery";
 import SkillsIcon from "./svgs/skillsIcon";
 
 const menus = [
-  { href: "/", text: "Home", icn: HomeIcon },
-  { href: "/gallery", text: "Gallery", icn: Gallery },
-  { href: "/skills", text: "Skills", icn: SkillsIcon },
-  { href: "/projects", text: "Projects", icn: ProjectsIcon },
-  { href: "/contact", text: "Contact", icn: ContactIcon },
+  { href: "/", text: "Home", icon: HomeIcon },
+  { href: "/gallery", text: "Gallery", icon: Gallery },
+  { href: "/skills", text: "Skills", icon: SkillsIcon },
+  { href: "/projects", text: "Projects", icon: ProjectsIcon },
+  { href: "/contact", text: "Contact", icon: ContactIcon },
 ];
 
 const icons = [
@@ -54,28 +54,28 @@ const icons = [
   },
 ];
 
-const navDowns = [
-  {
-    href: "/gallery",
-    img: Gallery,
-  },
-  {
-    href: "/skills",
-    img: SkillsIcon,
-  },
-  {
-    href: "/",
-    img: HomeIcon,
-  },
-  {
-    href: "/projects",
-    img: ProjectsIcon,
-  },
-  {
-    href: "/contact",
-    img: ContactIcon,
-  },
-];
+// const navDowns = [
+//   {
+//     href: "/gallery",
+//     img: Gallery,
+//   },
+//   {
+//     href: "/skills",
+//     img: SkillsIcon,
+//   },
+//   {
+//     href: "/",
+//     img: HomeIcon,
+//   },
+//   {
+//     href: "/projects",
+//     img: ProjectsIcon,
+//   },
+//   {
+//     href: "/contact",
+//     img: ContactIcon,
+//   },
+// ];
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -163,7 +163,7 @@ export default function Navbar() {
                         >
                           <div className=" p-4 flex flex-row">
                             <p className="px-6 ">
-                              <menu.icn
+                              <menu.icon
                                 className={` ${
                                   router.asPath === menu.href
                                     ? "animate-ping "
@@ -232,7 +232,7 @@ export default function Navbar() {
                     >
                       <div className="md:relative group md:text-center flex flex-row px-5">
                         <p className="px-3 p-1 md:group-hover:invisible">
-                          <menu.icn />
+                          <menu.icon />
                         </p>
                         <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-secondary dark:group-hover:text-light">
                           {menu.text}
@@ -305,21 +305,28 @@ export default function Navbar() {
       {/* End Navbar */}
 
       {/* NavDown */}
-      <div className="fixed z-30 bottom-0 left-0 right-0 flex justify-between max-w-[330px] mx-auto py-5 md:hidden">
-        <ul className="flex flex-row mx-auto rounded-full backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
-          {navDowns.map((navDown, index) => (
+      <div className="fixed z-30 bottom-0 left-0 right-0 max-w-[320px] mx-auto py-5 md:hidden">
+        <ul className="flex flex-row mx-auto rounded-lg backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
+          {menus.map((menu, index) => (
             <li
-              className=" justify-between text-secondary dark:text-light mx-2 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+              className=" justify-between text-secondary dark:text-light m-auto p-1 cursor-pointer"
               key={index}
             >
-              <Link href={navDown.href}>
-                <navDown.img
+              <Link href={menu.href}>
+                <div
                   className={` ${
-                    router.asPath === navDown.href
+                    router.asPath === menu.href
                       ? "text-primary "
                       : "text-secondary dark:text-light"
                   }`}
-                />
+                >
+                  <div className="text-center">
+                    <p className="inline-block justify-center mb-[-5px]">
+                      <menu.icon />
+                    </p>
+                    <p className="text-xs">{menu.text}</p>
+                  </div>
+                </div>
               </Link>
             </li>
           ))}
