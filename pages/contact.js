@@ -74,7 +74,11 @@ export default function Contact() {
 
                   <div className="flex items-center justify-between py-4">
                     <div className="container">
-                      <ul className=" flex justify-between">
+                      <ul
+                        className=" flex justify-between"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="2000"
+                      >
                         {icons.map((icon, index) => (
                           <li key={index} className="text-center">
                             <Link href={icon.href}>
@@ -105,7 +109,11 @@ export default function Contact() {
                   <div className="grid md:grid-cols-2 gap-4 w-full py-1">
                     <div className="flex flex-col">
                       <label for="name">
-                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
+                        <span
+                          className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
+                          data-aos="fade-left"
+                          data-aos-duration="1000"
+                        >
                           Name
                         </span>
                         <input
@@ -123,7 +131,11 @@ export default function Contact() {
                     </div>
                     <div className="flex flex-col">
                       <label for="phone">
-                        <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
+                        <span
+                          className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
+                          data-aos="fade-left"
+                          data-aos-duration="1000"
+                        >
                           Phone Number
                         </span>
                         <input
@@ -143,7 +155,11 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="email">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
+                      <span
+                        className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
                         Email
                       </span>
                       <input
@@ -160,7 +176,11 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="subject">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
+                      <span
+                        className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
                         Subject
                       </span>
                       <input
@@ -178,7 +198,11 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col py-1">
                     <label for="message">
-                      <span className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2">
+                      <span
+                        className="uppercase text-sm py-2 block after:content-['*'] after:text-danger after:ml-2"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
                         Message
                       </span>
                       <textarea
@@ -194,7 +218,11 @@ export default function Contact() {
                       </p>
                     </label>
                   </div>
-                  <button className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-primary border-2">
+                  <button
+                    className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-primary border-2"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="2000"
+                  >
                     Send Message
                   </button>
                 </form>
