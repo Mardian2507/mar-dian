@@ -21,7 +21,7 @@ export default function Skills() {
           >
             Skills
           </h2>
-          <h2 className="py-4" data-aos="fade-left" data-aos-duration="1000">
+          <h2 className="py-4" data-aos="zoom-in-down" data-aos-duration="2000">
             What I Can Do
           </h2>
 
@@ -30,15 +30,13 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Html} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="fade-down" data-aos-duration="1000">
-                    HTML
-                  </h3>
+                  <h3>HTML</h3>
                 </div>
               </div>
             </div>
@@ -46,15 +44,13 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Css} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="fade-down" data-aos-duration="1000">
-                    CSS
-                  </h3>
+                  <h3>CSS</h3>
                 </div>
               </div>
             </div>
@@ -62,15 +58,13 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Javascript} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="fade-down" data-aos-duration="1000">
-                    JavaScript
-                  </h3>
+                  <h3>JavaScript</h3>
                 </div>
               </div>
             </div>
@@ -78,15 +72,13 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={ReactImg} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="fade-down" data-aos-duration="1000">
-                    React
-                  </h3>
+                  <h3>React</h3>
                 </div>
               </div>
             </div>
@@ -94,8 +86,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Tailwind} width="64px" height="64px" alt="/" />
                 </div>
@@ -110,8 +102,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Firebase} width="64px" height="64px" alt="/" />
                 </div>
@@ -126,8 +118,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={Github} width="64px" height="64px" alt="/" />
                 </div>
@@ -142,8 +134,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
                 >
                   <Image src={NextJS} width="64px" height="64px" alt="/" />
                 </div>

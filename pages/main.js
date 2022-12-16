@@ -99,8 +99,8 @@ export default function Main() {
           <div className="col-span-2">
             <p
               className="uppercase text-xl tracking-widest text-primary"
-              // data-aos="fade-down"
-              // data-aos-duration="1000"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
             >
               About
             </p>
@@ -140,8 +140,8 @@ export default function Main() {
 
           <div
             className="w-fit h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4  hover:scale-105 ease-in duration-300"
-            // data-aos="zoom-in-down"
-            // data-aos-duration="2000"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
           >
             <Image
               src="/assets/mar-dian.webp"
