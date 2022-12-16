@@ -21,7 +21,7 @@ export default function Skills() {
           >
             Skills
           </h2>
-          <h2 className="py-4" data-aos="zoom-in-down" data-aos-duration="2000">
+          <h2 className="py-4" data-aos="zoom-in-down" data-aos-duration="3000">
             What I Can Do
           </h2>
 
@@ -31,7 +31,7 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Html} width="64px" height="64px" alt="/" />
                 </div>
@@ -45,7 +45,7 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Css} width="64px" height="64px" alt="/" />
                 </div>
@@ -59,7 +59,7 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Javascript} width="64px" height="64px" alt="/" />
                 </div>
@@ -73,7 +73,7 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={ReactImg} width="64px" height="64px" alt="/" />
                 </div>
@@ -87,14 +87,12 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Tailwind} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
-                    Tailwind
-                  </h3>
+                  <h3>Tailwind</h3>
                 </div>
               </div>
             </div>
@@ -103,14 +101,12 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Firebase} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
-                    Firebase
-                  </h3>
+                  <h3>Firebase</h3>
                 </div>
               </div>
             </div>
@@ -119,14 +115,12 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={Github} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
-                    Github
-                  </h3>
+                  <h3>Github</h3>
                 </div>
               </div>
             </div>
@@ -135,14 +129,12 @@ export default function Skills() {
                 <div
                   className="m-auto"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   <Image src={NextJS} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
-                    Next
-                  </h3>
+                  <h3>Next</h3>
                 </div>
               </div>
             </div>
