@@ -314,9 +314,9 @@ export default function Navbar() {
                 >
                   <div className="text-center">
                     <p className="inline-block justify-center pt-1 mb-[-5px]">
-                      <menu.icon className="w-4" />
+                      <menu.icon className="w-6" />
                     </p>
-                    <p className="text-[8px] w-10">{menu.text}</p>
+                    <p className="text-xs w-12">{menu.text}</p>
                   </div>
                 </div>
               </Link>
