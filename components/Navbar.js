@@ -247,10 +247,10 @@ export default function Navbar() {
           {/*End Dekstop Version */}
 
           {/* Bg Search */}
-          <div className="w-2/12">
+          <div className="w-3/12 md:w-3/12">
             <input
-              className="bg-search border-primary border-2 bg-transparent text-transparent md:text-secondary md:dark:text-light rounded-full w-full px-6 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-              placeholder="Search ..."
+              className="bg-search border-primary border-2 bg-transparent rounded-full w-full px-1 py-1 lg:py-0 md:px-3 lg:px-6 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              placeholder="Search..."
             />
           </div>
           {/* End Bg Search */}

@@ -13,7 +13,7 @@ export default function Skills() {
   return (
     <Layout title="Skills Mardian">
       <div id="skills" className="w-full min-h-screen">
-        <div className="lg:max-w-7xl m-auto px-2 py-16 flex flex-col justify-center h-full">
+        <div className="lg:max-w-7xl m-auto px-2 py-16 flex flex-col justify-center">
           <h2 className="pt-2 text-center tracking-widest uppercase text-primary">
             Skills
           </h2>
