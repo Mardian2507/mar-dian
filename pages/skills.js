@@ -12,9 +12,9 @@ import NextJS from "@/public/assets/skills/nextjs.png";
 export default function Skills() {
   return (
     <Layout title="Skills Mardian">
-      <div id="skills" className="w-full lg:h-screen">
-        <div className="lg:max-w-7xl mx-auto p-2 flex flex-col justify-center h-full">
-          <h2 className=" text-center tracking-widest uppercase text-primary">
+      <div id="skills" className="w-full h-full lg:h-screen">
+        <div className="lg:max-w-7xl mx-auto p-2 flex flex-col justify-center">
+          <h2 className="pt-2 text-center tracking-widest uppercase text-primary">
             Skills
           </h2>
           <h2 className="py-4">What I Can Do</h2>
