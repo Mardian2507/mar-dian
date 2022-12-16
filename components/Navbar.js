@@ -231,11 +231,16 @@ export default function Navbar() {
           {/*End Dekstop Version */}
 
           {/* Bg Search */}
-          <div className="w-3/12 md:w-3/12">
-            <input
-              className="bg-search border-primary border-2 bg-transparent rounded-full w-full px-1 py-1 lg:py-0 md:px-3 lg:px-6 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-              placeholder="Search..."
-            />
+          <div className="px-5">
+            <div className="relative text-secondary dark:text-light">
+              <Gallery />
+            </div>
+            <div className="absolute w-3/4 inset-x-10 md:w-3/5 inset-y-14">
+              <input
+                className="bg-search border-primary border-2 bg-gray-600 rounded-full w-full px-1 py-1 lg:py-0 md:px-3 lg:px-6 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                placeholder="Search..."
+              />
+            </div>
           </div>
           {/* End Bg Search */}
 
@@ -309,9 +314,9 @@ export default function Navbar() {
                 >
                   <div className="text-center">
                     <p className="inline-block justify-center pt-1 mb-[-5px]">
-                      <menu.icon />
+                      <menu.icon className="w-4" />
                     </p>
-                    {/* <p className="text-xs">{menu.text}</p> */}
+                    <p className="text-[8px] w-10">{menu.text}</p>
                   </div>
                 </div>
               </Link>

@@ -95,7 +95,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen px-5 md:px-14">
+      <div className="flex w-full lg:max-w-7xl justify-center items-center min-h-screen px-5 py-10 lg:px-14">
         <div className="m-auto md:grid md:px-20 grid-cols-3 gap-8">
           <div className="col-span-2">
             <p
