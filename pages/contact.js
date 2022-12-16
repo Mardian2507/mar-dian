@@ -76,8 +76,8 @@ export default function Contact() {
                     <div className="container">
                       <ul
                         className=" flex justify-between"
-                        data-aos="zoom-in-up"
-                        data-aos-duration="2000"
+                        // data-aos="zoom-in-up"
+                        // data-aos-duration="2000"
                       >
                         {icons.map((icon, index) => (
                           <li key={index} className="text-center">
