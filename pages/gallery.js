@@ -105,7 +105,11 @@ export default function Gallery() {
         {/* End Hero Parallax */}
 
         <div className="container px-5">
-          <h2 className="sticky top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
+          <h2
+            className="sticky top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             Gallery
           </h2>
           <p data-aos="fade-right" data-aos-duration="1000">

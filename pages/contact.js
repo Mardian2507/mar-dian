@@ -40,7 +40,11 @@ export default function Contact() {
     <Layout title="Contact Mardian">
       <div id="contact" className="w-full h-full">
         <div className="lg:max-w-7xl m-auto px-2 py-16 w-full ">
-          <h2 className=" pt-2 text-center tracking-widest  text-primary uppercase">
+          <h2
+            className=" pt-2 text-center tracking-widest  text-primary uppercase"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             Contact
           </h2>
           <h2 className="py-4">Get In Touch</h2>

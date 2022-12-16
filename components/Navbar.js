@@ -239,10 +239,10 @@ export default function Navbar() {
             </span>
             {currentTheme === "dark" ? (
               <button
-                className="relative group px-2 text-white hover:bg-black rounded-md border-primary border-2"
+                className="relative group md:px-2 text-white hover:bg-black rounded-md md:border-primary md:border-2"
                 onClick={() => setTheme("light")}
               >
-                <div className="md:group-hover:invisible">
+                <div className="md:group-hover:invisible transform -scale-x-100">
                   <Moon />
                 </div>
                 <span className="hidden md:block absolute inset-0 pt-[2px] text-base md:invisible md:group-hover:visible">
@@ -251,7 +251,7 @@ export default function Navbar() {
               </button>
             ) : (
               <button
-                className="relative group px-2 rounded-md border-primary border-2 hover:bg-gray-300"
+                className="relative group md:px-2 rounded-md md:border-primary md:border-2 hover:bg-gray-300"
                 onClick={() => setTheme("dark")}
               >
                 <div className="md:group-hover:invisible">
@@ -269,7 +269,7 @@ export default function Navbar() {
           <div className="px-5">
             <div className="">
               <button
-                className="flex items-center text-secondary dark:text-light hover:bg-amber-500 rounded-md border-primary border-2"
+                className="flex items-center text-secondary dark:text-light hover:bg-amber-500 rounded-md md:border-primary md:border-2"
                 onClick={() => setSearch(!search)}
               >
                 <div className="">

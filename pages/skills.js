@@ -14,89 +14,143 @@ export default function Skills() {
     <Layout title="Skills Mardian">
       <div id="skills" className="w-full min-h-screen">
         <div className="lg:max-w-7xl m-auto px-2 py-16 flex flex-col justify-center">
-          <h2 className="pt-2 text-center tracking-widest uppercase text-primary">
+          <h2
+            className="pt-2 text-center tracking-widest uppercase text-primary"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             Skills
           </h2>
-          <h2 className="py-4">What I Can Do</h2>
+          <h2 className="py-4" data-aos="fade-left" data-aos-duration="1000">
+            What I Can Do
+          </h2>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Html} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>HTML</h3>
+                  <h3 data-aos="fade-down" data-aos-duration="1000">
+                    HTML
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Css} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>CSS</h3>
+                  <h3 data-aos="fade-down" data-aos-duration="1000">
+                    CSS
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Javascript} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>JavaScript</h3>
+                  <h3 data-aos="fade-down" data-aos-duration="1000">
+                    JavaScript
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={ReactImg} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>React</h3>
+                  <h3 data-aos="fade-down" data-aos-duration="1000">
+                    React
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Tailwind} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Tailwind</h3>
+                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
+                    Tailwind
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Firebase} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Firebase</h3>
+                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
+                    Firebase
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={Github} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Github</h3>
+                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
+                    Github
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
+                <div
+                  className="m-auto"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <Image src={NextJS} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Next</h3>
+                  <h3 data-aos="zoom-in-up" data-aos-duration="1000">
+                    Next
+                  </h3>
                 </div>
               </div>
             </div>
