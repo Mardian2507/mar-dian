@@ -139,7 +139,13 @@ export default function Navbar() {
                               : "text-light "
                           }`}
                         >
-                          <div className=" p-4 flex flex-row">
+                          <div
+                            className=" p-4 flex flex-row"
+                            onClick={() => {
+                              setNav(false);
+                              document.body.style.overflow = "unset";
+                            }}
+                          >
                             <p className="px-6 ">
                               <menu.icon
                                 className={` ${
