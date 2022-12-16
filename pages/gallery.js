@@ -108,7 +108,7 @@ export default function Gallery() {
           <h2 className="sticky top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase">
             Gallery
           </h2>
-          <p>
+          <p data-aos="fade-right" data-aos-duration="1000">
             lorem200Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industrys standard
             dummy text ever since the 1500s, when an unknown printer took a
@@ -119,7 +119,7 @@ export default function Gallery() {
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <p>
+          <p data-aos="fade-right" data-aos-duration="1000">
             lorem200Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industrys standard
             dummy text ever since the 1500s, when an unknown printer took a
@@ -130,7 +130,7 @@ export default function Gallery() {
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <p>
+          <p data-aos="zoom-in-up" data-aos-duration="1000">
             lorem200Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industrys standard
             dummy text ever since the 1500s, when an unknown printer took a

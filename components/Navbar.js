@@ -17,6 +17,7 @@ import ProjectsIcon from "./svgs/projectsIcon";
 import ContactIcon from "./svgs/contactIcon";
 import Gallery from "./svgs/gallery";
 import SkillsIcon from "./svgs/skillsIcon";
+import SearchIcon from "./svgs/searchIcon";
 
 const menus = [
   { href: "/", text: "Home", icon: HomeIcon },
@@ -56,6 +57,7 @@ const icons = [
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [search, setSearch] = useState(false);
   const [shadow, setShadow] = useState(false);
   const router = useRouter();
   const { systemTheme, theme, setTheme } = useTheme();
@@ -230,20 +232,6 @@ export default function Navbar() {
           </div>
           {/*End Dekstop Version */}
 
-          {/* Bg Search */}
-          <div className="px-5">
-            <div className="relative text-secondary dark:text-light">
-              <Gallery />
-            </div>
-            <div className="absolute w-3/4 inset-x-10 md:w-3/5 inset-y-14">
-              <input
-                className="bg-search border-primary border-2 bg-gray-600 rounded-full w-full px-1 py-1 lg:py-0 md:px-3 lg:px-6 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-                placeholder="Search..."
-              />
-            </div>
-          </div>
-          {/* End Bg Search */}
-
           {/* Togle DarkMode */}
           <div className="flex flex-auto md:justify-end items-center ">
             <span className="text-xs px-1 text-secondary dark:text-light">
@@ -277,8 +265,47 @@ export default function Navbar() {
           </div>
           {/* End Togle DarkMode */}
 
+          {/* Bg Search */}
+          <div className="px-5">
+            <div className="">
+              <button
+                className="flex items-center text-secondary dark:text-light hover:bg-amber-500 rounded-md border-primary border-2"
+                onClick={() => setSearch(!search)}
+              >
+                <div className="">
+                  <SearchIcon />
+                </div>
+              </button>
+            </div>
+            <div
+              className={`absolute w-full lg:w-3/4 right-0 px-11 transition-all ${
+                search ? `top-[9px] md:top-[2px]` : `-top-40`
+              }`}
+            >
+              <button
+                className="absolute top-[6px] mx-1 md:mx-2 cursor-pointer text-secondary dark:text-light"
+                onClick={() => setSearch(false)}
+              >
+                <BtnClose />
+              </button>
+
+              <input
+                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-20 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                placeholder="Search..."
+              />
+
+              <button
+                className="absolute top-[6px] mx-[-28px] cursor-pointer text-secondary dark:text-light"
+                onClick={() => setSearch(false)}
+              >
+                <SearchIcon />
+              </button>
+            </div>
+          </div>
+          {/* End Bg Search */}
+
           {/* Humberger Menu */}
-          <div>
+          <div className="flex items-center">
             <button
               className="md:hidden dark:text-light"
               onClick={() => {
