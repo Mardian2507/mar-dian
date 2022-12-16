@@ -54,29 +54,6 @@ const icons = [
   },
 ];
 
-// const navDowns = [
-//   {
-//     href: "/gallery",
-//     img: Gallery,
-//   },
-//   {
-//     href: "/skills",
-//     img: SkillsIcon,
-//   },
-//   {
-//     href: "/",
-//     img: HomeIcon,
-//   },
-//   {
-//     href: "/projects",
-//     img: ProjectsIcon,
-//   },
-//   {
-//     href: "/contact",
-//     img: ContactIcon,
-//   },
-// ];
-
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -138,6 +115,7 @@ export default function Navbar() {
                     className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-primary border-2"
                     onClick={() => {
                       setNav(false);
+                      document.body.style.overflow = "unset";
                     }}
                   >
                     <BtnClose />
@@ -294,6 +272,9 @@ export default function Navbar() {
               className="md:hidden dark:text-light"
               onClick={() => {
                 setNav(!nav);
+                if (typeof window != "undefined" && window.document) {
+                  document.body.style.overflow = "hidden";
+                }
               }}
             >
               <Humberger />
