@@ -230,8 +230,8 @@ export default function Navbar() {
                           : "text-secondary dark:text-light "
                       }`}
                     >
-                      <div className="md:relative group md:text-center flex flex-row px-6">
-                        <p className="px-4 p-1 md:group-hover:invisible">
+                      <div className="md:relative group md:text-center flex flex-row px-5">
+                        <p className="px-3 p-1 md:group-hover:invisible">
                           <menu.icn />
                         </p>
                         <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-secondary dark:group-hover:text-light">
@@ -245,6 +245,15 @@ export default function Navbar() {
             </ul>
           </div>
           {/*End Dekstop Version */}
+
+          {/* Bg Search */}
+          <div className="w-2/12">
+            <input
+              className="bg-search border-primary border-2 bg-transparent text-transparent md:text-secondary md:dark:text-light rounded-full w-full px-6 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+              placeholder="Search ..."
+            />
+          </div>
+          {/* End Bg Search */}
 
           {/* Togle DarkMode */}
           <div className="flex flex-auto md:justify-end items-center ">
