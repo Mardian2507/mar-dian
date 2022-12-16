@@ -115,12 +115,12 @@ export default function Navbar() {
         <div className="flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
-            className={`fixed z-50 z w-full min-h-screen bg-secondary/90 top-0 transition-all duration-300 md:hidden ${
+            className={`fixed z-50 z w-full h-screen bg-secondary/90 top-0 transition-all duration-300 md:hidden ${
               nav ? "left-0" : "-left-full"
             }`}
           >
             <div
-              className={`fixed z-50 z w-3/4 min-h-screen backdrop-blur bg-amber-400/80 top-0 transition-all duration-700 md:hidden ${
+              className={`fixed z-50 z w-3/4 h-screen backdrop-blur bg-amber-400/80 top-0 transition-all duration-700 md:hidden ${
                 nav ? "left-0" : "-left-full"
               }`}
             >
@@ -305,7 +305,7 @@ export default function Navbar() {
       {/* End Navbar */}
 
       {/* NavDown */}
-      <div className="fixed z-30 bottom-0 left-0 right-0 max-w-[320px] mx-auto py-5 md:hidden">
+      <div className="fixed z-30 bottom-0 left-0 right-0 max-w-[330px] mx-auto py-5 md:hidden">
         <ul className="flex flex-row mx-auto rounded-lg backdrop-blur shadow-lg shadow-gray-400 dark:shadow-gray-100">
           {menus.map((menu, index) => (
             <li
@@ -321,10 +321,10 @@ export default function Navbar() {
                   }`}
                 >
                   <div className="text-center">
-                    <p className="inline-block justify-center mb-[-5px]">
+                    <p className="inline-block justify-center pt-1 mb-[-5px]">
                       <menu.icon />
                     </p>
-                    <p className="text-xs">{menu.text}</p>
+                    {/* <p className="text-xs">{menu.text}</p> */}
                   </div>
                 </div>
               </Link>
