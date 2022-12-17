@@ -91,7 +91,7 @@ export default function Navbar() {
             : "w-full lg:max-w-7xl fixed transition-all duration-500 z-40 shadow-xl py-2 md:py-1 px-[13px] md:px-[47px]  backdrop-blur "
         }
       >
-        <div className="relative flex flex-row justify-between items-center mx-auto">
+        <div className="flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
             className={`fixed z-50 z w-full h-screen bg-secondary/90 top-0 transition-all duration-300 md:hidden ${
@@ -286,6 +286,7 @@ export default function Navbar() {
                 className="absolute top-[6px] mx-1 md:mx-2 cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
+                <span>close</span>
                 <BtnClose />
               </button>
 
@@ -298,6 +299,7 @@ export default function Navbar() {
                 className="absolute top-[6px] mx-[-28px] cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
+                <span>search</span>
                 <SearchIcon />
               </button>
             </div>
