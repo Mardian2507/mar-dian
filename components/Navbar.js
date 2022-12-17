@@ -234,32 +234,29 @@ export default function Navbar() {
 
           {/* Togle DarkMode */}
           <div className="flex flex-auto md:justify-end items-center ">
-            <span className="text-xs px-1 text-secondary dark:text-light">
-              Mode
-            </span>
             {currentTheme === "dark" ? (
               <button
-                className="relative group md:px-2 text-white hover:bg-black rounded-md md:border-primary md:border-2"
+                className="flex items-center md:px-2 hover:bg-black rounded-md "
                 onClick={() => setTheme("light")}
               >
-                <div className="md:group-hover:invisible transform -scale-x-100">
-                  <Moon />
-                </div>
-                <span className="hidden md:block absolute inset-0 pt-[2px] text-base md:invisible md:group-hover:visible">
+                <span className="text-xs px-1 text-secondary dark:text-light">
                   dark
                 </span>
+                <div className="dark:text-light transform -scale-x-100">
+                  <Moon />
+                </div>
               </button>
             ) : (
               <button
-                className="relative group md:px-2 rounded-md md:border-primary md:border-2 hover:bg-gray-300"
+                className="flex items-center md:px-2 hover:bg-gray-300 rounded-md"
                 onClick={() => setTheme("dark")}
               >
-                <div className="md:group-hover:invisible">
-                  <Sun />
-                </div>
-                <span className="hidden md:block absolute inset-0 pt-[2px] text-base md:invisible md:group-hover:visible">
+                <span className="text-xs px-1 text-secondary dark:text-light">
                   light
                 </span>
+                <div className="text-secondary">
+                  <Sun />
+                </div>
               </button>
             )}
           </div>
@@ -268,13 +265,13 @@ export default function Navbar() {
           {/* Bg Search */}
           <div className="px-3">
             <div className="flex items-center">
-              <span className="text-xs px-1 text-secondary dark:text-light">
-                Search...
-              </span>
               <button
                 className="flex items-center text-secondary dark:text-light dark:hover:bg-secondary hover:bg-gray-300 rounded-md md:border-primary md:border-2"
                 onClick={() => setSearch(!search)}
               >
+                <span className="text-xs px-1 text-secondary dark:text-light">
+                  Search...
+                </span>
                 <div className="">
                   <SearchIcon />
                 </div>
@@ -309,11 +306,8 @@ export default function Navbar() {
 
           {/* Humberger Menu */}
           <div className="flex items-center">
-            <span className="text-xs px-1 text-secondary dark:text-light md:hidden">
-              Menu
-            </span>
             <button
-              className="md:hidden dark:text-light"
+              className="md:hidden dark:text-light flex items-center"
               onClick={() => {
                 setNav(!nav);
                 if (typeof window != "undefined" && window.document) {
@@ -321,7 +315,12 @@ export default function Navbar() {
                 }
               }}
             >
-              <Humberger />
+              <span className="text-xs px-1 text-secondary dark:text-light md:hidden">
+                Menu
+              </span>
+              <div>
+                <Humberger />
+              </div>
             </button>
           </div>
           {/* End Humberger Menu */}
