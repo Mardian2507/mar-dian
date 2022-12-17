@@ -91,7 +91,7 @@ export default function Navbar() {
             : "w-full lg:max-w-7xl fixed transition-all duration-500 z-40 shadow-xl py-2 md:py-1 px-[13px] md:px-[47px]  backdrop-blur "
         }
       >
-        <div className="flex flex-row justify-between items-center mx-auto">
+        <div className="relative flex flex-row justify-between items-center mx-auto">
           {/* Mobile Version */}
           <div
             className={`fixed z-50 z w-full h-screen bg-secondary/90 top-0 transition-all duration-300 md:hidden ${
@@ -114,7 +114,7 @@ export default function Navbar() {
                 />
                 <div className="flex items-center">
                   <button
-                    className="cursor-pointer shadow-lg shadow-slate-600 rounded-md border-primary border-2"
+                    className=" shadow-lg shadow-slate-600 rounded-md border-primary border-2"
                     onClick={() => {
                       setNav(false);
                       document.body.style.overflow = "unset";
