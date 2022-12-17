@@ -75,7 +75,7 @@ export default function Main() {
             <ul
               className="flex justify-between"
               data-aos="zoom-in-up"
-              data-aos-duration="2000"
+              data-aos-duration="3000"
             >
               {icons.map((icon, index) => (
                 <li className="relative group" key={index}>

@@ -99,7 +99,7 @@ export default function Navbar() {
             }`}
           >
             <div
-              className={`fixed z-50 z w-3/4 h-screen backdrop-blur bg-amber-400/80 top-0 transition-all duration-700 md:hidden ${
+              className={`fixed z-50 z w-3/4 h-screen backdrop-blur rounded-r-lg bg-amber-400/80 top-0 transition-all duration-700 md:hidden ${
                 nav ? "left-0" : "-left-full"
               }`}
             >
@@ -217,7 +217,7 @@ export default function Navbar() {
                       }`}
                     >
                       <div className="md:relative group md:text-center flex flex-row px-5">
-                        <p className="px-3 p-1 md:group-hover:invisible">
+                        <p className="md:px-1 lg:px-3 p-1 md:group-hover:invisible">
                           <menu.icon />
                         </p>
                         <p className="md:absolute inset-x-0 text-center md:pt-1 md:invisible group-hover:visible  group-hover:text-secondary dark:group-hover:text-light">
@@ -266,10 +266,13 @@ export default function Navbar() {
           {/* End Togle DarkMode */}
 
           {/* Bg Search */}
-          <div className="px-5">
-            <div className="">
+          <div className="px-3">
+            <div className="flex items-center">
+              <span className="text-xs px-1 text-secondary dark:text-light">
+                Search...
+              </span>
               <button
-                className="flex items-center text-secondary dark:text-light hover:bg-amber-500 rounded-md md:border-primary md:border-2"
+                className="flex items-center text-secondary dark:text-light dark:hover:bg-secondary hover:bg-gray-300 rounded-md md:border-primary md:border-2"
                 onClick={() => setSearch(!search)}
               >
                 <div className="">
@@ -306,6 +309,9 @@ export default function Navbar() {
 
           {/* Humberger Menu */}
           <div className="flex items-center">
+            <span className="text-xs px-1 text-secondary dark:text-light md:hidden">
+              Menu
+            </span>
             <button
               className="md:hidden dark:text-light"
               onClick={() => {
