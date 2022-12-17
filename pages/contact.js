@@ -52,7 +52,7 @@ export default function Contact() {
             {/* left */}
             <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full ">
-                <div data-aos="zoom-in-up" data-aos-duration="2000">
+                <div data-aos="zoom-in-up" data-aos-duration="1000">
                   <Image
                     src="/assets/mar-dian.webp"
                     width="200"
@@ -77,7 +77,7 @@ export default function Contact() {
                       <ul
                         className=" flex justify-between"
                         data-aos="zoom-in"
-                        data-aos-duration="3000"
+                        data-aos-duration="1000"
                       >
                         {icons.map((icon, index) => (
                           <li key={index} className="text-center">
@@ -221,7 +221,7 @@ export default function Contact() {
                   <button
                     className="w-full p-4 text-black dark:text-white/90 hover:dark:text-black rounded-lg hover:bg-gray-300 mt-4 border-primary border-2"
                     data-aos="zoom-in-up"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                   >
                     Send Message
                   </button>

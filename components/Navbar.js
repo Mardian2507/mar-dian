@@ -236,11 +236,11 @@ export default function Navbar() {
           <div className="flex flex-auto md:justify-end items-center ">
             {currentTheme === "dark" ? (
               <button
-                className="flex items-center md:px-2 hover:bg-black rounded-md "
+                className="flex items-center px-0 hover:bg-secondary rounded-md "
                 onClick={() => setTheme("light")}
               >
                 <span className="text-xs px-1 text-secondary dark:text-light">
-                  dark
+                  mode
                 </span>
                 <div className="dark:text-light transform -scale-x-100">
                   <Moon />
@@ -248,11 +248,11 @@ export default function Navbar() {
               </button>
             ) : (
               <button
-                className="flex items-center md:px-2 hover:bg-gray-300 rounded-md"
+                className="flex items-center px-0 hover:bg-gray-300 rounded-md"
                 onClick={() => setTheme("dark")}
               >
                 <span className="text-xs px-1 text-secondary dark:text-light">
-                  light
+                  mode
                 </span>
                 <div className="text-secondary">
                   <Sun />
@@ -278,29 +278,37 @@ export default function Navbar() {
               </button>
             </div>
             <div
-              className={`absolute w-full lg:w-3/4 right-0 px-11 transition-all ${
+              className={`absolute w-full lg:w-3/4 right-0 px-10 transition-all ${
                 search ? `top-[9px] md:top-[2px]` : `-top-40`
               }`}
             >
               <button
-                className="absolute top-[6px] mx-1 md:mx-2 cursor-pointer text-secondary dark:text-light"
+                className="absolute flex items-center top-[6px] mx-1 md:mx-2 cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
-                <span>close</span>
-                <BtnClose />
+                {/* <span className="text-xs text-secondary dark:text-light">
+                  close
+                </span> */}
+                <div>
+                  <BtnClose />
+                </div>
               </button>
 
               <input
-                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-20 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-12 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                 placeholder="Search..."
               />
 
               <button
-                className="absolute top-[6px] mx-[-28px] cursor-pointer text-secondary dark:text-light"
+                className="absolute top-[6px] mx-[-30px] md:mx-[-33px] cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
-                <span>search</span>
-                <SearchIcon />
+                <div>
+                  <SearchIcon />
+                </div>
+                {/* <span className="text-xs text-secondary dark:text-light">
+                  OK
+                </span> */}
               </button>
             </div>
           </div>

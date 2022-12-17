@@ -21,7 +21,7 @@ export default function Skills() {
           >
             Skills
           </h2>
-          <h2 className="py-4" data-aos="zoom-in-down" data-aos-duration="3000">
+          <h2 className="py-4" data-aos="flip-right" data-aos-duration="1000">
             What I Can Do
           </h2>
 
@@ -30,8 +30,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Html} width="64px" height="64px" alt="/" />
                 </div>
@@ -44,8 +44,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Css} width="64px" height="64px" alt="/" />
                 </div>
@@ -58,8 +58,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Javascript} width="64px" height="64px" alt="/" />
                 </div>
@@ -72,8 +72,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={ReactImg} width="64px" height="64px" alt="/" />
                 </div>
@@ -86,8 +86,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Tailwind} width="64px" height="64px" alt="/" />
                 </div>
@@ -100,8 +100,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Firebase} width="64px" height="64px" alt="/" />
                 </div>
@@ -114,8 +114,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={Github} width="64px" height="64px" alt="/" />
                 </div>
@@ -128,8 +128,8 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
-                  data-aos="zoom-in"
-                  data-aos-duration="3000"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
                 >
                   <Image src={NextJS} width="64px" height="64px" alt="/" />
                 </div>
