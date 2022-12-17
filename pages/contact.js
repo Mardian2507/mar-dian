@@ -52,7 +52,7 @@ export default function Contact() {
             {/* left */}
             <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full ">
-                <div data-aos="zoom-in-up" data-aos-duration="1000">
+                <div data-aos="flip-left" data-aos-duration="1000">
                   <Image
                     src="/assets/mar-dian.webp"
                     width="200"
