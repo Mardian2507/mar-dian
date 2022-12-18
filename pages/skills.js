@@ -1,13 +1,13 @@
-import Layout from "@/components/Layout";
+import Layout from "@components/Layout";
 import Image from "next/image";
-import Html from "@/public/assets/skills/html.png";
-import Css from "@/public/assets/skills/css.png";
-import Javascript from "@/public/assets/skills/javascript.png";
-import ReactImg from "@/public/assets/skills/react.png";
-import Tailwind from "@/public/assets/skills/tailwind.png";
-import Firebase from "@/public/assets/skills/firebase.png";
-import Github from "@/public/assets/skills/github1.png";
-import NextJS from "@/public/assets/skills/nextjs.png";
+import Html from "@public/assets/skills/html.png";
+import Css from "@public/assets/skills/css.png";
+import Javascript from "@public/assets/skills/javascript.png";
+import ReactImg from "@public/assets/skills/react.png";
+import Tailwind from "@public/assets/skills/tailwind.png";
+import Firebase from "@public/assets/skills/firebase.png";
+import Github from "@public/assets/skills/github1.png";
+import NextJS from "@public/assets/skills/nextjs.png";
 
 export default function Skills() {
   return (

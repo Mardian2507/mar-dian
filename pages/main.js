@@ -78,15 +78,17 @@ export default function Main() {
               data-aos-duration="2000"
             >
               {icons.map((icon, index) => (
-                <li className="relative group" key={index}>
+                <li className="group" key={index}>
                   <Link href={icon.href}>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-2 mx-1 md:p-6 md:mx-5 cursor-pointer md:group-hover:invisible">
-                      <icon.img />
+                    <div className="text-center">
+                      <div className="rounded-full inline-block shadow-lg shadow-gray-400 p-2 mx-1 md:p-6 md:mx-5 cursor-pointer md:group-hover:animate-bounce">
+                        <icon.img />
+                      </div>
+                      <div className="text-xs flex justify-center dark:text-light">
+                        {icon.text}
+                      </div>
                     </div>
                   </Link>
-                  <div className="absolute invisible p-2 inset-x-0 text-center rounded-full shadow-lg shadow-gray-400  md:-mt-14 cursor-pointer md:group-hover:visible">
-                    {icon.text}
-                  </div>
                 </li>
               ))}
             </ul>

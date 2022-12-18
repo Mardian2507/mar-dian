@@ -278,7 +278,7 @@ export default function Navbar() {
               </button>
             </div>
             <div
-              className={`absolute w-full lg:w-3/4 right-0 px-10 transition-all ${
+              className={`absolute w-full lg:w-3/4 right-0 px-3 transition-all ${
                 search ? `top-[9px] md:top-[2px]` : `-top-40`
               }`}
             >
@@ -295,7 +295,7 @@ export default function Navbar() {
               </button>
 
               <input
-                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-12 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-12 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-secondary"
                 placeholder="Search..."
               />
 

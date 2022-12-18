@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@styles/globals.css";
 import NextNProgress from "nextjs-progressbar";
 import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";

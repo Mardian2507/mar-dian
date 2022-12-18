@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+import Layout from "@components/Layout";
 import Github from "components/svgs/github";
 import Instagram from "components/svgs/instagram";
 import Linkedin from "components/svgs/linkedin";
