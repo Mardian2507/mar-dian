@@ -283,32 +283,32 @@ export default function Navbar() {
               }`}
             >
               <button
-                className="absolute flex items-center top-[6px] mx-1 md:mx-2 cursor-pointer text-secondary dark:text-light"
+                className="absolute flex items-center bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-600 rounded-md top-[6px] mx-2 cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
-                {/* <span className="text-xs text-secondary dark:text-light">
+                <span className="text-xs pl-1 text-secondary dark:text-light">
                   close
-                </span> */}
-                <div>
+                </span>
+                <div className=" -ml-1">
                   <BtnClose />
                 </div>
               </button>
 
               <input
-                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-10 py-2 lg:py-1 md:px-12 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-secondary"
+                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-16 py-2 lg:py-1 md:px-20 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-secondary dark:focus:border-slate-300"
                 placeholder="Search..."
               />
 
               <button
-                className="absolute top-[6px] mx-[-30px] md:mx-[-33px] cursor-pointer text-secondary dark:text-light"
+                className="absolute flex items-center bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-600 rounded-md right-12 md:right-14 top-[6px] mx-[-30px] md:mx-[-33px] cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
                 <div>
                   <SearchIcon />
                 </div>
-                {/* <span className="text-xs text-secondary dark:text-light">
+                <span className="text-xs text-secondary pt-1 pr-1 dark:text-light">
                   OK
-                </span> */}
+                </span>
               </button>
             </div>
           </div>
