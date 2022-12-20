@@ -25,7 +25,7 @@ export default function Gallery() {
 
         <div className="container px-1 lg:px-4 flex flex-col justify-center items-center">
           <h2
-            className="sticky z-10 top-2 pt-2 mt-4 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
+            className="mt-6 text-center tracking-widest  text-primary uppercase"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
