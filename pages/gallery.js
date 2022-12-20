@@ -23,7 +23,7 @@ export default function Gallery() {
           <ParallaxHero />
         </div>
 
-        <div className="container px-4 flex flex-col justify-center items-center">
+        <div className="container px-1 lg:px-4 flex flex-col justify-center items-center">
           <h2
             className="sticky z-10 top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
             data-aos="fade-down"
