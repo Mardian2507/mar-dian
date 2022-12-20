@@ -42,7 +42,7 @@ export default function Main() {
         <div className="absolute z-10 bg-gradient-to-t from-slate-100 dark:bg-gradient-to-t dark:from-slate-800 left-0 right-0 top-0 bottom-0" />
         <div className="px-5 z-20">
           <p
-            className="uppercase text-sm tracking-widest text-secondary dark:text-light text-shadow-light dark:text-shadow-secondary"
+            className="uppercase text-sm tracking-widest text-black dark:text-light text-shadow-light dark:text-shadow-secondary"
             data-aos="flip-right"
             data-aos-duration="2000"
           >
@@ -64,7 +64,7 @@ export default function Main() {
             A Front-End Web Developer
           </h1>
           <p
-            className="py-4 pb-10 text-secondary dark:text-light text-shadow-light dark:text-shadow-secondary"
+            className="py-4 pb-10 text-black dark:text-light text-shadow-light dark:text-shadow-secondary"
             data-aos="flip-right"
             data-aos-duration="2000"
           >
