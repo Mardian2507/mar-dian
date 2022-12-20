@@ -23,7 +23,7 @@ export default function Gallery() {
           <ParallaxHero />
         </div>
 
-        <div className="container px-5 flex flex-col justify-center items-center">
+        <div className="container px-4 flex flex-col justify-center items-center">
           <h2
             className="sticky z-10 top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
             data-aos="fade-down"
@@ -32,7 +32,7 @@ export default function Gallery() {
             Gallery
           </h2>
 
-          <div className="grid grid-cols-4 gap-1 md:grid-cols-5 md:gap-2 mt-10">
+          <div className="grid grid-cols-3 gap-1 md:grid-cols-5 md:gap-2 mt-10">
             {posts.map((post) => (
               <div
                 key={post.id}
