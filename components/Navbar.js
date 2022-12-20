@@ -295,7 +295,7 @@ export default function Navbar() {
               </button>
 
               <input
-                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-16 py-2 lg:py-1 md:px-20 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-secondary dark:focus:border-slate-300"
+                className="text-secondary dark:text-light bg-light dark:bg-secondary  border-primary border-2 rounded-lg w-full px-[70px] py-2 lg:py-1 md:px-20 text-xs lg:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-secondary dark:focus:border-slate-300"
                 placeholder="Search..."
               />
 
