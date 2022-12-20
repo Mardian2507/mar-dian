@@ -32,7 +32,7 @@ export default function Gallery() {
             Gallery
           </h2>
 
-          <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 mt-10">
+          <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 mt-10 mb-10">
             {posts.map((post) => (
               <div
                 key={post.id}
