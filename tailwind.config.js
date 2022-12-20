@@ -32,6 +32,15 @@ module.exports = {
           backgroundPositionX: "right",
           backgroundPositionY: "3px",
         },
+        ".text-shadow-primary": {
+          textShadow: "2px 2px #5651e5",
+        },
+        ".text-shadow-secondary": {
+          textShadow: "2px 2px #0f172a",
+        },
+        ".text-shadow-light": {
+          textShadow: "2px 2px #f8fafc",
+        },
       };
 
       addUtilities(utilities);

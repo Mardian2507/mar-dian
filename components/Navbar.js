@@ -286,12 +286,12 @@ export default function Navbar() {
                 className="absolute flex items-center bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-600 rounded-md top-[6px] mx-2 cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
-                <span className="text-xs pl-1 text-secondary dark:text-light">
-                  close
-                </span>
-                <div className=" -ml-1">
+                <div>
                   <BtnClose />
                 </div>
+                <span className="text-xs pr-1 text-secondary dark:text-light">
+                  close
+                </span>
               </button>
 
               <input
@@ -303,12 +303,12 @@ export default function Navbar() {
                 className="absolute flex items-center bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-600 rounded-md right-12 md:right-14 top-[6px] mx-[-30px] md:mx-[-33px] cursor-pointer text-secondary dark:text-light"
                 onClick={() => setSearch(false)}
               >
+                <span className="text-xs text-secondary pl-1 dark:text-light">
+                  oke
+                </span>
                 <div>
                   <SearchIcon />
                 </div>
-                <span className="text-xs text-secondary pt-1 pr-1 dark:text-light">
-                  OK
-                </span>
               </button>
             </div>
           </div>

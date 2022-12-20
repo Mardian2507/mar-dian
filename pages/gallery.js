@@ -9,37 +9,112 @@ import Tailwind from "@public/assets/skills/tailwind.png";
 import Firebase from "@public/assets/skills/firebase.png";
 import Github from "@public/assets/skills/github1.png";
 import NextJS from "@public/assets/skills/nextjs.png";
+import CardPost from "components/CardPost";
+import { useState } from "react";
 
 export default function Gallery() {
+  const [posts, setPost] = useState([
+    {
+      id: 1,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 2,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 3,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 4,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 5,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 6,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 7,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 8,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+    {
+      id: 9,
+      thumbnail: "/assets/mar-dian.webp",
+      places: "Bandung",
+      date: "25/07/2023",
+      postTitle: "backpak judul",
+      shortDescription: "ini deskripsi",
+    },
+  ]);
+
   return (
     <Layout title="Gallery Mardian">
       <div className="w-full h-full justify-center items-center ">
-        <ParallaxHero />
+        <div>
+          <ParallaxHero />
+        </div>
 
         <div className="container px-5">
           <h2
-            className="sticky top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
+            className="sticky z-10 top-2 pt-2 text-center tracking-widest  text-primary backdrop-blur rounded-lg uppercase"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
             Gallery
           </h2>
 
-          <p data-aos="zoom-in-up" data-aos-duration="1000">
-            lorem200Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industrys standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
+          <div className="grid grid-cols-4">
+            {posts.map((post) => (
+              <div key={post.id}>
+                <CardPost {...post} />
+              </div>
+            ))}
+          </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+          <div className="grid grid-cols-3 gap-1 lg:grid-cols-4 md:gap-8">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -52,8 +127,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -66,8 +141,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -80,8 +155,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -94,8 +169,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -108,8 +183,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -122,8 +197,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"
@@ -136,8 +211,8 @@ export default function Gallery() {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="p-2 md:p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
                 <div
                   className="m-auto"
                   data-aos="flip-up"

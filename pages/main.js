@@ -42,28 +42,29 @@ export default function Main() {
         <div className="absolute z-10 bg-gradient-to-t from-slate-100 dark:bg-gradient-to-t dark:from-slate-800 left-0 right-0 top-0 bottom-0" />
         <div className="px-5 z-20">
           <p
-            className="uppercase text-sm tracking-widest text-gray-800 dark:text-light"
+            className="uppercase text-sm tracking-widest text-gray-800 dark:text-light text-shadow-light dark:text-shadow-secondary"
             data-aos="flip-right"
             data-aos-duration="2000"
           >
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1
-            className="py-4 text-gray-700 dark:text-slate-200"
+            className="py-4 text-gray-700 dark:text-slate-200 text-shadow-primary"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
-            Hi, I&#39;m <span className="text-primary"> Mardian</span>
+            Hi, I&#39;m{" "}
+            <span className="text-primary text-shadow-secondary"> Mardian</span>
           </h1>
           <h1
-            className="py-2 text-gray-700 dark:text-slate-200"
+            className="py-2 text-gray-700 dark:text-slate-200 text-shadow-primary"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
             A Front-End Web Developer
           </h1>
           <p
-            className="py-4 pb-10 text-gray-600 dark:text-slate-200"
+            className="py-4 pb-10 text-gray-600 dark:text-slate-200 text-shadow-light dark:text-shadow-secondary"
             data-aos="flip-right"
             data-aos-duration="2000"
           >
