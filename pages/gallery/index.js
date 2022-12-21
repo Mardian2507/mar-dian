@@ -1,17 +1,9 @@
 import Layout from "@components/Layout";
-import Image from "next/image";
 import ParallaxHero from "components/ParallaxHero";
-import Html from "@public/assets/skills/html.png";
-import Css from "@public/assets/skills/css.png";
-import Javascript from "@public/assets/skills/javascript.png";
-import ReactImg from "@public/assets/skills/react.png";
-import Tailwind from "@public/assets/skills/tailwind.png";
-import Firebase from "@public/assets/skills/firebase.png";
-import Github from "@public/assets/skills/github1.png";
-import NextJS from "@public/assets/skills/nextjs.png";
 import CardPost from "components/CardPost";
 import { useState } from "react";
-import mockPosts from "../utils/posts.json";
+import mockPosts from "/utils/posts.json";
+import Link from "next/link";
 
 export default function Gallery() {
   const [posts, setPost] = useState(mockPosts);
@@ -36,9 +28,11 @@ export default function Gallery() {
             {posts.map((post) => (
               <div
                 key={post.id}
-                className="p-1 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+                className="p-1 shadow-xl rounded-md hover:scale-105 ease-in duration-300"
               >
-                <CardPost {...post} />
+                <Link href={`/gallery/${post.id}`}>
+                  <CardPost {...post} />
+                </Link>
               </div>
             ))}
           </div>
